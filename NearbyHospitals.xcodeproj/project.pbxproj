@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37938339D37844346D287A74 /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */; };
+		38D3004DFE01F58D2109A392 /* Pods_NearbyHospitalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */; };
+		73D95930020854AC76C53D26 /* Pods_NearbyHospitals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */; };
+		AF645539249EFABD00530DA7 /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645534249EFABD00530DA7 /* bitrise.yml */; };
+		AF64553A249EFABD00530DA7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645535249EFABD00530DA7 /* swiftgen.yml */; };
+		AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645536249EFABD00530DA7 /* .swiftlint.yml */; };
+		AF64553C249EFABD00530DA7 /* generate-swiftgen.sh in Resources */ = {isa = PBXBuildFile; fileRef = AF645537249EFABD00530DA7 /* generate-swiftgen.sh */; };
+		AF64553D249EFABD00530DA7 /* .pecker.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645538249EFABD00530DA7 /* .pecker.yml */; };
 		AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB85249EF634002E6D19 /* AppDelegate.swift */; };
 		AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */; };
 		AFFCBB8A249EF634002E6D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB89249EF634002E6D19 /* ViewController.swift */; };
@@ -35,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E61EF145B5D4F3C6FF050FD /* Pods-NearbyHospitals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals.debug.xcconfig"; sourceTree = "<group>"; };
+		2A98374C1176A4152D43A8A2 /* Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitals_NearbyHospitalsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF645534249EFABD00530DA7 /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
+		AF645535249EFABD00530DA7 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		AF645536249EFABD00530DA7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AF645537249EFABD00530DA7 /* generate-swiftgen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "generate-swiftgen.sh"; sourceTree = "<group>"; };
+		AF645538249EFABD00530DA7 /* .pecker.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .pecker.yml; sourceTree = "<group>"; };
 		AFFCBB82249EF634002E6D19 /* NearbyHospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyHospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBB85249EF634002E6D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 		AFFCBBA3249EF635002E6D19 /* NearbyHospitalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyHospitalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBBA7249EF635002E6D19 /* NearbyHospitalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyHospitalsUITests.swift; sourceTree = "<group>"; };
 		AFFCBBA9249EF635002E6D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D910D8076CC664783E73889C /* Pods-NearbyHospitals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D95930020854AC76C53D26 /* Pods_NearbyHospitals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D3004DFE01F58D2109A392 /* Pods_NearbyHospitalsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +94,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37938339D37844346D287A74 /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076AFF1E3198341593B9357F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E61EF145B5D4F3C6FF050FD /* Pods-NearbyHospitals.debug.xcconfig */,
+				D910D8076CC664783E73889C /* Pods-NearbyHospitals.release.xcconfig */,
+				2A98374C1176A4152D43A8A2 /* Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig */,
+				68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */,
+				5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */,
+				7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF645533249EFA2800530DA7 /* BuildScripts */ = {
+			isa = PBXGroup;
+			children = (
+				AF645538249EFABD00530DA7 /* .pecker.yml */,
+				AF645536249EFABD00530DA7 /* .swiftlint.yml */,
+				AF645534249EFABD00530DA7 /* bitrise.yml */,
+				AF645537249EFABD00530DA7 /* generate-swiftgen.sh */,
+				AF645535249EFABD00530DA7 /* swiftgen.yml */,
+			);
+			path = BuildScripts;
+			sourceTree = "<group>";
+		};
 		AFFCBB79249EF634002E6D19 = {
 			isa = PBXGroup;
 			children = (
+				AF645533249EFA2800530DA7 /* BuildScripts */,
 				AFFCBB84249EF634002E6D19 /* NearbyHospitals */,
 				AFFCBB9B249EF635002E6D19 /* NearbyHospitalsTests */,
 				AFFCBBA6249EF635002E6D19 /* NearbyHospitalsUITests */,
 				AFFCBB83249EF634002E6D19 /* Products */,
+				076AFF1E3198341593B9357F /* Pods */,
+				E9AE9AFB744341555634DE8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +181,16 @@
 			path = NearbyHospitalsUITests;
 			sourceTree = "<group>";
 		};
+		E9AE9AFB744341555634DE8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */,
+				6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */,
+				8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFCBBAC249EF635002E6D19 /* Build configuration list for PBXNativeTarget "NearbyHospitals" */;
 			buildPhases = (
+				871308234C93E9566C3F6F13 /* [CP] Check Pods Manifest.lock */,
 				AFFCBB7E249EF634002E6D19 /* Sources */,
 				AFFCBB7F249EF634002E6D19 /* Frameworks */,
 				AFFCBB80249EF634002E6D19 /* Resources */,
+				745DF3C3EAA70CB54CB3DD27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFCBBAF249EF635002E6D19 /* Build configuration list for PBXNativeTarget "NearbyHospitalsTests" */;
 			buildPhases = (
+				15D4118A9C6CB7D305181B67 /* [CP] Check Pods Manifest.lock */,
 				AFFCBB94249EF635002E6D19 /* Sources */,
 				AFFCBB95249EF635002E6D19 /* Frameworks */,
 				AFFCBB96249EF635002E6D19 /* Resources */,
+				BE6C9D6E61315EF973DC7E2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFCBBB2249EF635002E6D19 /* Build configuration list for PBXNativeTarget "NearbyHospitalsUITests" */;
 			buildPhases = (
+				9A2A7CE5337394D9EA84A761 /* [CP] Check Pods Manifest.lock */,
 				AFFCBB9F249EF635002E6D19 /* Sources */,
 				AFFCBBA0249EF635002E6D19 /* Frameworks */,
 				AFFCBBA1249EF635002E6D19 /* Resources */,
+				7BFB944DF653E63C4B21B83D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */,
 				AFFCBB92249EF635002E6D19 /* LaunchScreen.storyboard in Resources */,
+				AF64553A249EFABD00530DA7 /* swiftgen.yml in Resources */,
+				AF64553D249EFABD00530DA7 /* .pecker.yml in Resources */,
+				AF645539249EFABD00530DA7 /* bitrise.yml in Resources */,
 				AFFCBB8F249EF635002E6D19 /* Assets.xcassets in Resources */,
 				AFFCBB8D249EF634002E6D19 /* Main.storyboard in Resources */,
+				AF64553C249EFABD00530DA7 /* generate-swiftgen.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +327,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15D4118A9C6CB7D305181B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitalsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		745DF3C3EAA70CB54CB3DD27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BFB944DF653E63C4B21B83D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		871308234C93E9566C3F6F13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A2A7CE5337394D9EA84A761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitals-NearbyHospitalsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6C9D6E61315EF973DC7E2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFFCBB7E249EF634002E6D19 /* Sources */ = {
@@ -432,6 +626,7 @@
 		};
 		AFFCBBAD249EF635002E6D19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E61EF145B5D4F3C6FF050FD /* Pods-NearbyHospitals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +644,7 @@
 		};
 		AFFCBBAE249EF635002E6D19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D910D8076CC664783E73889C /* Pods-NearbyHospitals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +662,7 @@
 		};
 		AFFCBBB0249EF635002E6D19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +684,7 @@
 		};
 		AFFCBBB1249EF635002E6D19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +706,7 @@
 		};
 		AFFCBBB3249EF635002E6D19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A98374C1176A4152D43A8A2 /* Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +726,7 @@
 		};
 		AFFCBBB4249EF635002E6D19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
