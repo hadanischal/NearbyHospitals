@@ -3,8 +3,7 @@
 
 xcassets:
   inputs:
-    - ./NearbyHospitals/Resources/Assets/Assets.xcassets
-    - ./NearbyHospitals/Resources/Assets/Icons.xcassets
+    - ./NearbyHospitals/Resources/Assets/
   outputs:
     - templateName: swift4
       output: ./NearbyHospitals/Generated/SwiftGen/Assets/Assets.swift
@@ -37,16 +36,14 @@ colors:
     
 strings:
   inputs:
-    - ./NearbyHospitals/Resources/Strings/DashBoard.strings
-    - ./NearbyHospitals/Resources/Strings/Mock.strings
+    - ./NearbyHospitals/Resources/Strings/
   outputs:
     - templateName: structured-swift4
       output: ./NearbyHospitals/Generated/SwiftGen/Strings/GeneratedStrings.swift
 
 json:
   inputs:
-    - ./NearbyHospitals/Resources/JsonFIle/jobsResult.json
-    - ./NearbyHospitalsTests/MockResources/jobs.json
+    - ./NearbyHospitals/Resources/JsonFile/
   outputs:
     - templateName: runtime-swift4
       output: ./NearbyHospitals/Generated/SwiftGen/JSONFiles/GeneratedJSONFiles.swift
