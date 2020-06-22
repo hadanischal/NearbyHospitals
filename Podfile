@@ -8,10 +8,10 @@ target 'NearbyHospitals' do
   # Pods for NearbyHospitals
   pod 'RxSwift', '~> 5.1.1'
   pod 'RxCocoa', '~> 5.1.1'
-  pod 'Kingfisher', '~> 5.13.4'
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.0'
   pod 'Pecker'
+  pod 'PKHUD', '~> 5.0'
   
   target 'NearbyHospitalsTests' do
     inherit! :search_paths
