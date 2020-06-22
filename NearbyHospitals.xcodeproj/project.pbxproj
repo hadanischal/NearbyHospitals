@@ -8,21 +8,69 @@
 
 /* Begin PBXBuildFile section */
 		37938339D37844346D287A74 /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */; };
-		38D3004DFE01F58D2109A392 /* Pods_NearbyHospitalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */; };
 		73D95930020854AC76C53D26 /* Pods_NearbyHospitals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */; };
-		AF645539249EFABD00530DA7 /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645534249EFABD00530DA7 /* bitrise.yml */; };
-		AF64553A249EFABD00530DA7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645535249EFABD00530DA7 /* swiftgen.yml */; };
+		AF2051C6249F4A0400FAD59F /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF2051C5249F4A0400FAD59F /* swiftgen.yml */; };
+		AF2051CB249F4F2F00FAD59F /* SeverityLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051C8249F4F2F00FAD59F /* SeverityLevelRepository.swift */; };
+		AF2051CC249F4F2F00FAD59F /* HospitaListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051C9249F4F2F00FAD59F /* HospitaListRepository.swift */; };
+		AF2051CF249F4F6800FAD59F /* DiseaseListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051CE249F4F6800FAD59F /* DiseaseListRepository.swift */; };
+		AF2051D1249F4F8200FAD59F /* DiseaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */; };
+		AF2051D3249F4FC400FAD59F /* DiseaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */; };
+		AF2051D6249F56A400FAD59F /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D5249F56A400FAD59F /* BaseViewProtocol.swift */; };
+		AF2051E8249F570100FAD59F /* CustomViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DA249F570100FAD59F /* CustomViewExtension.swift */; };
+		AF2051E9249F570100FAD59F /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DB249F570100FAD59F /* UIButton+Extensions.swift */; };
+		AF2051EA249F570100FAD59F /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DC249F570100FAD59F /* FontExtension.swift */; };
+		AF2051EB249F570100FAD59F /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DE249F570100FAD59F /* UICollectionView+Extension.swift */; };
+		AF2051EC249F570100FAD59F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DF249F570100FAD59F /* UIViewControllerExtension.swift */; };
+		AF2051ED249F570100FAD59F /* NavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051E0249F570100FAD59F /* NavigationControllerExtension.swift */; };
+		AF2051EE249F570100FAD59F /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051E1249F570100FAD59F /* BundleExtension.swift */; };
+		AF2051EF249F570100FAD59F /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051E3249F570100FAD59F /* UITableView+Extensions.swift */; };
+		AF2051F1249F570100FAD59F /* ColourConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051E5249F570100FAD59F /* ColourConstant.swift */; };
+		AF2051F6249F57CB00FAD59F /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051F4249F57CB00FAD59F /* NibLoadableView.swift */; };
+		AF2051F7249F57CB00FAD59F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051F5249F57CB00FAD59F /* ReusableView.swift */; };
+		AF2051FB249F5E7A00FAD59F /* DiseaseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051F9249F5E7A00FAD59F /* DiseaseListTableViewCell.swift */; };
+		AF2051FC249F5E7A00FAD59F /* DiseaseListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */; };
+		AF2051FE249F5EB300FAD59F /* CustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */; };
+		AF205200249F73E500FAD59F /* DiseaseList.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2051FF249F73E500FAD59F /* DiseaseList.strings */; };
 		AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645536249EFABD00530DA7 /* .swiftlint.yml */; };
-		AF64553C249EFABD00530DA7 /* generate-swiftgen.sh in Resources */ = {isa = PBXBuildFile; fileRef = AF645537249EFABD00530DA7 /* generate-swiftgen.sh */; };
-		AF64553D249EFABD00530DA7 /* .pecker.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645538249EFABD00530DA7 /* .pecker.yml */; };
+		AF64554D249F097D00530DA7 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = AF64554C249F097D00530DA7 /* .swiftformat */; };
+		AF645555249F0D2F00530DA7 /* HospitalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645554249F0D2F00530DA7 /* HospitalListModel.swift */; };
+		AF645557249F0E8C00530DA7 /* IllnessListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645556249F0E8C00530DA7 /* IllnessListModel.swift */; };
+		AF645562249F3F1D00530DA7 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64555B249F3F1D00530DA7 /* URLRequest+Extensions.swift */; };
+		AF645563249F3F1D00530DA7 /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64555C249F3F1D00530DA7 /* WebServiceProtocol.swift */; };
+		AF645564249F3F1D00530DA7 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64555D249F3F1D00530DA7 /* WebService.swift */; };
+		AF645565249F3F1D00530DA7 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64555E249F3F1D00530DA7 /* URL+Extensions.swift */; };
+		AF645566249F3F1D00530DA7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64555F249F3F1D00530DA7 /* NetworkError.swift */; };
+		AF645567249F3F1D00530DA7 /* HospitalsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645561249F3F1D00530DA7 /* HospitalsNetworking.swift */; };
+		AF64556F249F437400530DA7 /* SeverityLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */; };
+		AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645570249F43AF00530DA7 /* HospitaListViewController.swift */; };
+		AF645575249F441200530DA7 /* SeverityLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */; };
+		AF645577249F442100530DA7 /* HospitaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645576249F442100530DA7 /* HospitaListViewModel.swift */; };
+		AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557B249F452400530DA7 /* StoryboardSegues.swift */; };
+		AF64559E249F452400530DA7 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557C249F452400530DA7 /* StoryboardScenes.swift */; };
+		AF64559F249F452400530DA7 /* GeneratedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557E249F452400530DA7 /* GeneratedStrings.swift */; };
+		AF6455A0249F452400530DA7 /* GeneratedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645580249F452400530DA7 /* GeneratedColors.swift */; };
+		AF6455A1249F452400530DA7 /* GeneratedFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645582249F452400530DA7 /* GeneratedFonts.swift */; };
+		AF6455A2249F452400530DA7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645584249F452400530DA7 /* Assets.swift */; };
+		AF6455A3249F452400530DA7 /* GeneratedJSONFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645586249F452400530DA7 /* GeneratedJSONFiles.swift */; };
+		AF6455A5249F452400530DA7 /* DataStructures.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558A249F452400530DA7 /* DataStructures.strings */; };
+		AF6455A6249F452400530DA7 /* TabBar.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558B249F452400530DA7 /* TabBar.strings */; };
+		AF6455A7249F452400530DA7 /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558C249F452400530DA7 /* About.strings */; };
+		AF6455AC249F452400530DA7 /* StandardColors.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF645593249F452400530DA7 /* StandardColors.txt */; };
+		AF6455AD249F452400530DA7 /* source-sans-pro.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF645595249F452400530DA7 /* source-sans-pro.regular.ttf */; };
+		AF6455AE249F452400530DA7 /* kitten_swash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF645596249F452400530DA7 /* kitten_swash.ttf */; };
+		AF6455AF249F452400530DA7 /* source-sans-pro.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF645597249F452400530DA7 /* source-sans-pro.light.ttf */; };
+		AF6455B0249F452400530DA7 /* source-sans-pro.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF645598249F452400530DA7 /* source-sans-pro.bold.ttf */; };
+		AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559A249F452400530DA7 /* Assets.xcassets */; };
+		AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559B249F452400530DA7 /* Icons.xcassets */; };
+		AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559C249F452400530DA7 /* ColorsAssets.xcassets */; };
 		AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB85249EF634002E6D19 /* AppDelegate.swift */; };
 		AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */; };
 		AFFCBB8A249EF634002E6D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB89249EF634002E6D19 /* ViewController.swift */; };
 		AFFCBB8D249EF634002E6D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFCBB8B249EF634002E6D19 /* Main.storyboard */; };
-		AFFCBB8F249EF635002E6D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFCBB8E249EF635002E6D19 /* Assets.xcassets */; };
 		AFFCBB92249EF635002E6D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFCBB90249EF635002E6D19 /* LaunchScreen.storyboard */; };
 		AFFCBB9D249EF635002E6D19 /* NearbyHospitalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB9C249EF635002E6D19 /* NearbyHospitalsTests.swift */; };
 		AFFCBBA8249EF635002E6D19 /* NearbyHospitalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBBA7249EF635002E6D19 /* NearbyHospitalsUITests.swift */; };
+		D13E8D621965FE56B55DEE31 /* Pods_NearbyHospitalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76275DD3A5CEA40B270B2BBD /* Pods_NearbyHospitalsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,24 +92,72 @@
 
 /* Begin PBXFileReference section */
 		0E61EF145B5D4F3C6FF050FD /* Pods-NearbyHospitals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals.debug.xcconfig"; sourceTree = "<group>"; };
+		1F0A2ADA1BD351189277182C /* Pods-NearbyHospitalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A98374C1176A4152D43A8A2 /* Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6242340C4C2707E15C9D02B1 /* Pods-NearbyHospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitals_NearbyHospitalsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitalsTests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests.release.xcconfig"; sourceTree = "<group>"; };
-		8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF645534249EFABD00530DA7 /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
-		AF645535249EFABD00530DA7 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		76275DD3A5CEA40B270B2BBD /* Pods_NearbyHospitalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2051C5249F4A0400FAD59F /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		AF2051C8249F4F2F00FAD59F /* SeverityLevelRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityLevelRepository.swift; sourceTree = "<group>"; };
+		AF2051C9249F4F2F00FAD59F /* HospitaListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitaListRepository.swift; sourceTree = "<group>"; };
+		AF2051CE249F4F6800FAD59F /* DiseaseListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListRepository.swift; sourceTree = "<group>"; };
+		AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListViewModel.swift; sourceTree = "<group>"; };
+		AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListViewController.swift; sourceTree = "<group>"; };
+		AF2051D5249F56A400FAD59F /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		AF2051DA249F570100FAD59F /* CustomViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewExtension.swift; sourceTree = "<group>"; };
+		AF2051DB249F570100FAD59F /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		AF2051DC249F570100FAD59F /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		AF2051DE249F570100FAD59F /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		AF2051DF249F570100FAD59F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AF2051E0249F570100FAD59F /* NavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtension.swift; sourceTree = "<group>"; };
+		AF2051E1249F570100FAD59F /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		AF2051E3249F570100FAD59F /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		AF2051E5249F570100FAD59F /* ColourConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourConstant.swift; sourceTree = "<group>"; };
+		AF2051F4249F57CB00FAD59F /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		AF2051F5249F57CB00FAD59F /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		AF2051F9249F5E7A00FAD59F /* DiseaseListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseListTableViewCell.swift; sourceTree = "<group>"; };
+		AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiseaseListTableViewCell.xib; sourceTree = "<group>"; };
+		AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFooterView.swift; sourceTree = "<group>"; };
+		AF2051FF249F73E500FAD59F /* DiseaseList.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DiseaseList.strings; sourceTree = "<group>"; };
 		AF645536249EFABD00530DA7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		AF645537249EFABD00530DA7 /* generate-swiftgen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "generate-swiftgen.sh"; sourceTree = "<group>"; };
-		AF645538249EFABD00530DA7 /* .pecker.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .pecker.yml; sourceTree = "<group>"; };
+		AF64554C249F097D00530DA7 /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		AF645554249F0D2F00530DA7 /* HospitalListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListModel.swift; sourceTree = "<group>"; };
+		AF645556249F0E8C00530DA7 /* IllnessListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessListModel.swift; sourceTree = "<group>"; };
+		AF64555B249F3F1D00530DA7 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		AF64555C249F3F1D00530DA7 /* WebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
+		AF64555D249F3F1D00530DA7 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		AF64555E249F3F1D00530DA7 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		AF64555F249F3F1D00530DA7 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AF645561249F3F1D00530DA7 /* HospitalsNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsNetworking.swift; sourceTree = "<group>"; };
+		AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewController.swift; sourceTree = "<group>"; };
+		AF645570249F43AF00530DA7 /* HospitaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListViewController.swift; sourceTree = "<group>"; };
+		AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewModel.swift; sourceTree = "<group>"; };
+		AF645576249F442100530DA7 /* HospitaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListViewModel.swift; sourceTree = "<group>"; };
+		AF64557B249F452400530DA7 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		AF64557C249F452400530DA7 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		AF64557E249F452400530DA7 /* GeneratedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedStrings.swift; sourceTree = "<group>"; };
+		AF645580249F452400530DA7 /* GeneratedColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedColors.swift; sourceTree = "<group>"; };
+		AF645582249F452400530DA7 /* GeneratedFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedFonts.swift; sourceTree = "<group>"; };
+		AF645584249F452400530DA7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		AF645586249F452400530DA7 /* GeneratedJSONFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedJSONFiles.swift; sourceTree = "<group>"; };
+		AF64558A249F452400530DA7 /* DataStructures.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DataStructures.strings; sourceTree = "<group>"; };
+		AF64558B249F452400530DA7 /* TabBar.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TabBar.strings; sourceTree = "<group>"; };
+		AF64558C249F452400530DA7 /* About.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = About.strings; sourceTree = "<group>"; };
+		AF645593249F452400530DA7 /* StandardColors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StandardColors.txt; sourceTree = "<group>"; };
+		AF645595249F452400530DA7 /* source-sans-pro.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.regular.ttf"; sourceTree = "<group>"; };
+		AF645596249F452400530DA7 /* kitten_swash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kitten_swash.ttf; sourceTree = "<group>"; };
+		AF645597249F452400530DA7 /* source-sans-pro.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.light.ttf"; sourceTree = "<group>"; };
+		AF645598249F452400530DA7 /* source-sans-pro.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.bold.ttf"; sourceTree = "<group>"; };
+		AF64559A249F452400530DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF64559B249F452400530DA7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		AF64559C249F452400530DA7 /* ColorsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsAssets.xcassets; sourceTree = "<group>"; };
 		AFFCBB82249EF634002E6D19 /* NearbyHospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyHospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBB85249EF634002E6D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFFCBB89249EF634002E6D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFFCBB8C249EF634002E6D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFFCBB8E249EF635002E6D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFCBB91249EF635002E6D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFCBB93249EF635002E6D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFCBB98249EF635002E6D19 /* NearbyHospitalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyHospitalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D3004DFE01F58D2109A392 /* Pods_NearbyHospitalsTests.framework in Frameworks */,
+				D13E8D621965FE56B55DEE31 /* Pods_NearbyHospitalsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,28 +204,308 @@
 				D910D8076CC664783E73889C /* Pods-NearbyHospitals.release.xcconfig */,
 				2A98374C1176A4152D43A8A2 /* Pods-NearbyHospitals-NearbyHospitalsUITests.debug.xcconfig */,
 				68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */,
-				5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */,
-				7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */,
+				6242340C4C2707E15C9D02B1 /* Pods-NearbyHospitalsTests.debug.xcconfig */,
+				1F0A2ADA1BD351189277182C /* Pods-NearbyHospitalsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AF645533249EFA2800530DA7 /* BuildScripts */ = {
+		AF2051C7249F4F2F00FAD59F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				AF645538249EFABD00530DA7 /* .pecker.yml */,
-				AF645536249EFABD00530DA7 /* .swiftlint.yml */,
-				AF645534249EFABD00530DA7 /* bitrise.yml */,
-				AF645537249EFABD00530DA7 /* generate-swiftgen.sh */,
-				AF645535249EFABD00530DA7 /* swiftgen.yml */,
+				AF2051C8249F4F2F00FAD59F /* SeverityLevelRepository.swift */,
+				AF2051C9249F4F2F00FAD59F /* HospitaListRepository.swift */,
+				AF2051CE249F4F6800FAD59F /* DiseaseListRepository.swift */,
 			);
-			path = BuildScripts;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AF2051D4249F569900FAD59F /* BaseViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051D5249F56A400FAD59F /* BaseViewProtocol.swift */,
+			);
+			path = BaseViewProtocol;
+			sourceTree = "<group>";
+		};
+		AF2051D7249F570100FAD59F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051D8249F570100FAD59F /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AF2051D8249F570100FAD59F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051D9249F570100FAD59F /* UIViewControllerExtension */,
+				AF2051DD249F570100FAD59F /* UICollectionView+Extension */,
+				AF2051E2249F570100FAD59F /* UITableView+Extensions */,
+				AF2051DB249F570100FAD59F /* UIButton+Extensions.swift */,
+				AF2051DC249F570100FAD59F /* FontExtension.swift */,
+				AF2051DF249F570100FAD59F /* UIViewControllerExtension.swift */,
+				AF2051E0249F570100FAD59F /* NavigationControllerExtension.swift */,
+				AF2051E1249F570100FAD59F /* BundleExtension.swift */,
+				AF2051E5249F570100FAD59F /* ColourConstant.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF2051D9249F570100FAD59F /* UIViewControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051DA249F570100FAD59F /* CustomViewExtension.swift */,
+			);
+			path = UIViewControllerExtension;
+			sourceTree = "<group>";
+		};
+		AF2051DD249F570100FAD59F /* UICollectionView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051DE249F570100FAD59F /* UICollectionView+Extension.swift */,
+			);
+			path = "UICollectionView+Extension";
+			sourceTree = "<group>";
+		};
+		AF2051E2249F570100FAD59F /* UITableView+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051E3249F570100FAD59F /* UITableView+Extensions.swift */,
+			);
+			path = "UITableView+Extensions";
+			sourceTree = "<group>";
+		};
+		AF2051F3249F57CB00FAD59F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051F4249F57CB00FAD59F /* NibLoadableView.swift */,
+				AF2051F5249F57CB00FAD59F /* ReusableView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AF2051F8249F5E5300FAD59F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051F9249F5E7A00FAD59F /* DiseaseListTableViewCell.swift */,
+				AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */,
+				AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		AF64554B249F091B00530DA7 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051C5249F4A0400FAD59F /* swiftgen.yml */,
+				AF64554C249F097D00530DA7 /* .swiftformat */,
+				AF645536249EFABD00530DA7 /* .swiftlint.yml */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		AF645553249F0D1D00530DA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF645554249F0D2F00530DA7 /* HospitalListModel.swift */,
+				AF645556249F0E8C00530DA7 /* IllnessListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF645558249F3E4C00530DA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */,
+				AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */,
+				AF645576249F442100530DA7 /* HospitaListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF645559249F3F1D00530DA7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF64555A249F3F1D00530DA7 /* Core */,
+				AF645560249F3F1D00530DA7 /* Services */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		AF64555A249F3F1D00530DA7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF64555B249F3F1D00530DA7 /* URLRequest+Extensions.swift */,
+				AF64555C249F3F1D00530DA7 /* WebServiceProtocol.swift */,
+				AF64555D249F3F1D00530DA7 /* WebService.swift */,
+				AF64555E249F3F1D00530DA7 /* URL+Extensions.swift */,
+				AF64555F249F3F1D00530DA7 /* NetworkError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AF645560249F3F1D00530DA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF645561249F3F1D00530DA7 /* HospitalsNetworking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF64556A249F406A00530DA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051D4249F569900FAD59F /* BaseViewProtocol */,
+				AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */,
+				AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */,
+				AF645570249F43AF00530DA7 /* HospitaListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF64556B249F408700530DA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051F8249F5E5300FAD59F /* TableViewCell */,
+				AF2051F3249F57CB00FAD59F /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF645578249F452400530DA7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				AF645579249F452400530DA7 /* SwiftGen */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		AF645579249F452400530DA7 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				AF64557A249F452400530DA7 /* Storyboards */,
+				AF64557D249F452400530DA7 /* Strings */,
+				AF64557F249F452400530DA7 /* Colors */,
+				AF645581249F452400530DA7 /* Fonts */,
+				AF645583249F452400530DA7 /* Assets */,
+				AF645585249F452400530DA7 /* JSONFiles */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		AF64557A249F452400530DA7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF64557B249F452400530DA7 /* StoryboardSegues.swift */,
+				AF64557C249F452400530DA7 /* StoryboardScenes.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF64557D249F452400530DA7 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				AF64557E249F452400530DA7 /* GeneratedStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		AF64557F249F452400530DA7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AF645580249F452400530DA7 /* GeneratedColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		AF645581249F452400530DA7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF645582249F452400530DA7 /* GeneratedFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AF645583249F452400530DA7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF645584249F452400530DA7 /* Assets.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AF645585249F452400530DA7 /* JSONFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AF645586249F452400530DA7 /* GeneratedJSONFiles.swift */,
+			);
+			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		AF645587249F452400530DA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF645588249F452400530DA7 /* Strings */,
+				AF64558D249F452400530DA7 /* JsonFile */,
+				AF645592249F452400530DA7 /* Colors */,
+				AF645594249F452400530DA7 /* Fonts */,
+				AF645599249F452400530DA7 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF645588249F452400530DA7 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				AF2051FF249F73E500FAD59F /* DiseaseList.strings */,
+				AF64558A249F452400530DA7 /* DataStructures.strings */,
+				AF64558B249F452400530DA7 /* TabBar.strings */,
+				AF64558C249F452400530DA7 /* About.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		AF64558D249F452400530DA7 /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		AF645592249F452400530DA7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AF645593249F452400530DA7 /* StandardColors.txt */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		AF645594249F452400530DA7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF645595249F452400530DA7 /* source-sans-pro.regular.ttf */,
+				AF645596249F452400530DA7 /* kitten_swash.ttf */,
+				AF645597249F452400530DA7 /* source-sans-pro.light.ttf */,
+				AF645598249F452400530DA7 /* source-sans-pro.bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AF645599249F452400530DA7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF64559A249F452400530DA7 /* Assets.xcassets */,
+				AF64559B249F452400530DA7 /* Icons.xcassets */,
+				AF64559C249F452400530DA7 /* ColorsAssets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		AFFCBB79249EF634002E6D19 = {
 			isa = PBXGroup;
 			children = (
-				AF645533249EFA2800530DA7 /* BuildScripts */,
+				AF64554B249F091B00530DA7 /* scripts */,
 				AFFCBB84249EF634002E6D19 /* NearbyHospitals */,
 				AFFCBB9B249EF635002E6D19 /* NearbyHospitalsTests */,
 				AFFCBBA6249EF635002E6D19 /* NearbyHospitalsUITests */,
@@ -152,11 +528,19 @@
 		AFFCBB84249EF634002E6D19 /* NearbyHospitals */ = {
 			isa = PBXGroup;
 			children = (
+				AF645559249F3F1D00530DA7 /* NetworkLayer */,
+				AF645553249F0D1D00530DA7 /* Models */,
+				AF2051C7249F4F2F00FAD59F /* Repository */,
+				AF645558249F3E4C00530DA7 /* ViewModel */,
+				AF64556A249F406A00530DA7 /* ViewController */,
+				AF64556B249F408700530DA7 /* Views */,
+				AF645578249F452400530DA7 /* Generated */,
+				AF645587249F452400530DA7 /* Resources */,
+				AF2051D7249F570100FAD59F /* Utility */,
 				AFFCBB85249EF634002E6D19 /* AppDelegate.swift */,
 				AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */,
 				AFFCBB89249EF634002E6D19 /* ViewController.swift */,
 				AFFCBB8B249EF634002E6D19 /* Main.storyboard */,
-				AFFCBB8E249EF635002E6D19 /* Assets.xcassets */,
 				AFFCBB90249EF635002E6D19 /* LaunchScreen.storyboard */,
 				AFFCBB93249EF635002E6D19 /* Info.plist */,
 			);
@@ -186,7 +570,7 @@
 			children = (
 				44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */,
 				6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */,
-				8A5CFD39B80A307E38BFE7A3 /* Pods_NearbyHospitalsTests.framework */,
+				76275DD3A5CEA40B270B2BBD /* Pods_NearbyHospitalsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,7 +586,7 @@
 				AFFCBB7E249EF634002E6D19 /* Sources */,
 				AFFCBB7F249EF634002E6D19 /* Frameworks */,
 				AFFCBB80249EF634002E6D19 /* Resources */,
-				745DF3C3EAA70CB54CB3DD27 /* [CP] Embed Pods Frameworks */,
+				84783A376C7EC28738E42048 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,11 +601,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFCBBAF249EF635002E6D19 /* Build configuration list for PBXNativeTarget "NearbyHospitalsTests" */;
 			buildPhases = (
-				15D4118A9C6CB7D305181B67 /* [CP] Check Pods Manifest.lock */,
+				933366FEF2DB8C85FD43F574 /* [CP] Check Pods Manifest.lock */,
 				AFFCBB94249EF635002E6D19 /* Sources */,
 				AFFCBB95249EF635002E6D19 /* Frameworks */,
 				AFFCBB96249EF635002E6D19 /* Resources */,
-				BE6C9D6E61315EF973DC7E2D /* [CP] Embed Pods Frameworks */,
+				4D74605822B6D228994416B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +625,7 @@
 				AFFCBB9F249EF635002E6D19 /* Sources */,
 				AFFCBBA0249EF635002E6D19 /* Frameworks */,
 				AFFCBBA1249EF635002E6D19 /* Resources */,
-				7BFB944DF653E63C4B21B83D /* [CP] Embed Pods Frameworks */,
+				176E10ECCFE576779FBC0AF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,12 +687,22 @@
 			files = (
 				AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */,
 				AFFCBB92249EF635002E6D19 /* LaunchScreen.storyboard in Resources */,
-				AF64553A249EFABD00530DA7 /* swiftgen.yml in Resources */,
-				AF64553D249EFABD00530DA7 /* .pecker.yml in Resources */,
-				AF645539249EFABD00530DA7 /* bitrise.yml in Resources */,
-				AFFCBB8F249EF635002E6D19 /* Assets.xcassets in Resources */,
+				AF6455A6249F452400530DA7 /* TabBar.strings in Resources */,
+				AF6455A7249F452400530DA7 /* About.strings in Resources */,
+				AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */,
+				AF2051C6249F4A0400FAD59F /* swiftgen.yml in Resources */,
+				AF2051FC249F5E7A00FAD59F /* DiseaseListTableViewCell.xib in Resources */,
+				AF205200249F73E500FAD59F /* DiseaseList.strings in Resources */,
+				AF6455AF249F452400530DA7 /* source-sans-pro.light.ttf in Resources */,
+				AF6455AD249F452400530DA7 /* source-sans-pro.regular.ttf in Resources */,
+				AF6455B0249F452400530DA7 /* source-sans-pro.bold.ttf in Resources */,
+				AF6455A5249F452400530DA7 /* DataStructures.strings in Resources */,
+				AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */,
+				AF6455AC249F452400530DA7 /* StandardColors.txt in Resources */,
 				AFFCBB8D249EF634002E6D19 /* Main.storyboard in Resources */,
-				AF64553C249EFABD00530DA7 /* generate-swiftgen.sh in Resources */,
+				AF6455AE249F452400530DA7 /* kitten_swash.ttf in Resources */,
+				AF64554D249F097D00530DA7 /* .swiftformat in Resources */,
+				AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,46 +723,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15D4118A9C6CB7D305181B67 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitalsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		745DF3C3EAA70CB54CB3DD27 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BFB944DF653E63C4B21B83D /* [CP] Embed Pods Frameworks */ = {
+		176E10ECCFE576779FBC0AF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,6 +738,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D74605822B6D228994416B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84783A376C7EC28738E42048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitals/Pods-NearbyHospitals-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		871308234C93E9566C3F6F13 /* [CP] Check Pods Manifest.lock */ = {
@@ -401,6 +790,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933366FEF2DB8C85FD43F574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyHospitalsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -429,23 +840,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE6C9D6E61315EF973DC7E2D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyHospitalsTests/Pods-NearbyHospitalsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,9 +847,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2051E8249F570100FAD59F /* CustomViewExtension.swift in Sources */,
+				AF2051CC249F4F2F00FAD59F /* HospitaListRepository.swift in Sources */,
+				AF645557249F0E8C00530DA7 /* IllnessListModel.swift in Sources */,
+				AF6455A2249F452400530DA7 /* Assets.swift in Sources */,
+				AF2051D3249F4FC400FAD59F /* DiseaseListViewController.swift in Sources */,
+				AF2051CB249F4F2F00FAD59F /* SeverityLevelRepository.swift in Sources */,
 				AFFCBB8A249EF634002E6D19 /* ViewController.swift in Sources */,
+				AF2051CF249F4F6800FAD59F /* DiseaseListRepository.swift in Sources */,
+				AF645564249F3F1D00530DA7 /* WebService.swift in Sources */,
+				AF2051EA249F570100FAD59F /* FontExtension.swift in Sources */,
+				AF2051EE249F570100FAD59F /* BundleExtension.swift in Sources */,
 				AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */,
+				AF645565249F3F1D00530DA7 /* URL+Extensions.swift in Sources */,
+				AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */,
+				AF2051FB249F5E7A00FAD59F /* DiseaseListTableViewCell.swift in Sources */,
+				AF2051F6249F57CB00FAD59F /* NibLoadableView.swift in Sources */,
+				AF645575249F441200530DA7 /* SeverityLevelViewModel.swift in Sources */,
+				AF2051E9249F570100FAD59F /* UIButton+Extensions.swift in Sources */,
+				AF645562249F3F1D00530DA7 /* URLRequest+Extensions.swift in Sources */,
+				AF2051FE249F5EB300FAD59F /* CustomHeaderFooterView.swift in Sources */,
+				AF2051EB249F570100FAD59F /* UICollectionView+Extension.swift in Sources */,
+				AF2051D1249F4F8200FAD59F /* DiseaseListViewModel.swift in Sources */,
+				AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */,
 				AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */,
+				AF2051EC249F570100FAD59F /* UIViewControllerExtension.swift in Sources */,
+				AF645563249F3F1D00530DA7 /* WebServiceProtocol.swift in Sources */,
+				AF645577249F442100530DA7 /* HospitaListViewModel.swift in Sources */,
+				AF645567249F3F1D00530DA7 /* HospitalsNetworking.swift in Sources */,
+				AF64559F249F452400530DA7 /* GeneratedStrings.swift in Sources */,
+				AF2051F1249F570100FAD59F /* ColourConstant.swift in Sources */,
+				AF64556F249F437400530DA7 /* SeverityLevelViewController.swift in Sources */,
+				AF2051EF249F570100FAD59F /* UITableView+Extensions.swift in Sources */,
+				AF645555249F0D2F00530DA7 /* HospitalListModel.swift in Sources */,
+				AF2051ED249F570100FAD59F /* NavigationControllerExtension.swift in Sources */,
+				AF64559E249F452400530DA7 /* StoryboardScenes.swift in Sources */,
+				AF2051F7249F57CB00FAD59F /* ReusableView.swift in Sources */,
+				AF6455A0249F452400530DA7 /* GeneratedColors.swift in Sources */,
+				AF6455A1249F452400530DA7 /* GeneratedFonts.swift in Sources */,
+				AF2051D6249F56A400FAD59F /* BaseViewProtocol.swift in Sources */,
+				AF645566249F3F1D00530DA7 /* NetworkError.swift in Sources */,
+				AF6455A3249F452400530DA7 /* GeneratedJSONFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +1094,7 @@
 		};
 		AFFCBBB0249EF635002E6D19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5071B43AE54BFC5B48C67956 /* Pods-NearbyHospitalsTests.debug.xcconfig */;
+			baseConfigurationReference = 6242340C4C2707E15C9D02B1 /* Pods-NearbyHospitalsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -684,7 +1116,7 @@
 		};
 		AFFCBBB1249EF635002E6D19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD20176E101F21C6E160CD1 /* Pods-NearbyHospitalsTests.release.xcconfig */;
+			baseConfigurationReference = 1F0A2ADA1BD351189277182C /* Pods-NearbyHospitalsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
