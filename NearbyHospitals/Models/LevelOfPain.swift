@@ -17,7 +17,7 @@ enum LevelOfPain: Int, Codable, CaseIterable {
 }
 
 extension LevelOfPain {
-    var image: ImageAsset {
+    var icnImage: ImageAsset {
         switch self {
         case .mild:
             return Asset.Icons.illnessNoPain0
