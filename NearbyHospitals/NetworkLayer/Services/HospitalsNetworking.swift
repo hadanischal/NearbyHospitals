@@ -9,15 +9,15 @@
 import Foundation
 import RxSwift
 
-protocol IllnessListHandling {
-    func getIllnessesInfo() -> Observable<IllnessEmbedded?>
+protocol DiseaseListHandling {
+    func getDiseaseInfo() -> Observable<IllnessEmbedded?>
 }
 
 protocol HospitalListHandling {
     func getHospitalsInfo() -> Observable<HospitalEmbedded?>
 }
 
-typealias HospitalsNetwork = IllnessListHandling & HospitalListHandling
+typealias HospitalsNetwork = DiseaseListHandling & HospitalListHandling
 
 final class HospitalsNetworking: HospitalsNetwork {
     private let webService: WebServiceProtocol
@@ -26,7 +26,7 @@ final class HospitalsNetworking: HospitalsNetwork {
         self.webService = webService
     }
 
-    func getIllnessesInfo() -> Observable<IllnessEmbedded?> {
+    func getDiseaseInfo() -> Observable<IllnessEmbedded?> {
         guard let url = URL.illnessesUrl else { return Observable<IllnessEmbedded?>.error(NetworkError.badURL) }
         var res: Resource<IllnessListModel> { Resource(url: url) }
 
