@@ -10,6 +10,6 @@ import Foundation
 
 // MARK: - Next
 
-struct Next: Codable {
+struct Next: Codable, Equatable {
     let href: String
 }

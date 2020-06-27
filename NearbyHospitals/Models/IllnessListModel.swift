@@ -24,13 +24,13 @@ struct IllnessListModel: Codable {
 
 // MARK: - IllnessEmbedded
 
-struct IllnessEmbedded: Codable {
+struct IllnessEmbedded: Codable, Equatable {
     let illnesses: [IllnessElement]
 }
 
 // MARK: - IllnessElement
 
-struct IllnessElement: Codable {
+struct IllnessElement: Codable, Equatable {
     let illness: IllnessIllness
     let links: IllnessLinks
 
@@ -42,14 +42,14 @@ struct IllnessElement: Codable {
 
 // MARK: - IllnessIllness
 
-struct IllnessIllness: Codable {
+struct IllnessIllness: Codable, Equatable {
     let name: String
     let id: Int
 }
 
 // MARK: - IllnessLinks
 
-struct IllnessLinks: Codable {
+struct IllnessLinks: Codable, Equatable {
     let illnesses, linksSelf: Next
 
     enum CodingKeys: String, CodingKey {
@@ -60,7 +60,7 @@ struct IllnessLinks: Codable {
 
 // MARK: - IllnessListModelLinks
 
-struct IllnessListModelLinks: Codable {
+struct IllnessListModelLinks: Codable, Equatable {
     let linksSelf, next: Next
 
     enum CodingKeys: String, CodingKey {

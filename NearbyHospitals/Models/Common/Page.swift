@@ -10,6 +10,6 @@ import Foundation
 
 // MARK: - Page
 
-struct Page: Codable {
+struct Page: Codable, Equatable {
     let size, totalElements, totalPages, number: Int
 }

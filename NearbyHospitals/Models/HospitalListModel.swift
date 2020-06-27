@@ -24,13 +24,13 @@ struct HospitalListModel: Codable {
 
 // MARK: - HospitalEmbedded
 
-struct HospitalEmbedded: Codable {
+struct HospitalEmbedded: Codable, Equatable {
     let hospitals: [Hospital]
 }
 
 // MARK: - Hospital
 
-struct Hospital: Codable {
+struct Hospital: Codable, Equatable {
     let id: Int
     let name: String
     let waitingList: [WaitingList]
@@ -39,20 +39,20 @@ struct Hospital: Codable {
 
 // MARK: - Location
 
-struct Location: Codable {
+struct Location: Codable, Equatable {
     let lat, lng: Double
 }
 
 // MARK: - WaitingList
 
-struct WaitingList: Codable {
+struct WaitingList: Codable, Equatable {
     let levelOfPain: LevelOfPain
     let patientCount, averageProcessTime: Int
 }
 
 // MARK: - Links
 
-struct Links: Codable {
+struct Links: Codable, Equatable {
     let linksSelf, next: Next
 
     enum CodingKeys: String, CodingKey {
