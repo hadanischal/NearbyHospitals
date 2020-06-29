@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		37938339D37844346D287A74 /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */; };
 		73D95930020854AC76C53D26 /* Pods_NearbyHospitals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E91740A1014C9321AFC967 /* Pods_NearbyHospitals.framework */; };
+		AF14C39424A2C41B008F13A2 /* DiseaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C38D24A2C41B008F13A2 /* DiseaseListViewModel.swift */; };
+		AF14C39524A2C41B008F13A2 /* DiseaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C38E24A2C41B008F13A2 /* DiseaseModel.swift */; };
+		AF14C39624A2C41B008F13A2 /* HospitaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39024A2C41B008F13A2 /* HospitaListViewModel.swift */; };
+		AF14C39724A2C41B008F13A2 /* HospitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39124A2C41B008F13A2 /* HospitaModel.swift */; };
+		AF14C39824A2C41B008F13A2 /* SeverityLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39324A2C41B008F13A2 /* SeverityLevelViewModel.swift */; };
+		AF14C39B24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39A24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift */; };
+		AF14C39D24A2C5C5008F13A2 /* HospitaListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39C24A2C5C5008F13A2 /* HospitaListViewModelTests.swift */; };
+		AF14C39F24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C39E24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift */; };
+		AF14C3A124A2C64A008F13A2 /* Cuckoo-GeneratedMocks.sh in Resources */ = {isa = PBXBuildFile; fileRef = AF14C3A024A2C64A008F13A2 /* Cuckoo-GeneratedMocks.sh */; };
+		AF14C3A324A2C6D7008F13A2 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C3A224A2C6D7008F13A2 /* GeneratedMocks.swift */; };
+		AF14C3AA24A2D88C008F13A2 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C3A524A2D88B008F13A2 /* TestError.swift */; };
+		AF14C3AB24A2D88C008F13A2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C3A624A2D88B008F13A2 /* MockData.swift */; };
+		AF14C3AD24A2D88C008F13A2 /* MaterializedSequenceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14C3A924A2D88B008F13A2 /* MaterializedSequenceResult.swift */; };
 		AF2051C6249F4A0400FAD59F /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF2051C5249F4A0400FAD59F /* swiftgen.yml */; };
 		AF2051CB249F4F2F00FAD59F /* SeverityLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051C8249F4F2F00FAD59F /* SeverityLevelRepository.swift */; };
 		AF2051CC249F4F2F00FAD59F /* HospitaListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051C9249F4F2F00FAD59F /* HospitaListRepository.swift */; };
 		AF2051CF249F4F6800FAD59F /* DiseaseListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051CE249F4F6800FAD59F /* DiseaseListRepository.swift */; };
-		AF2051D1249F4F8200FAD59F /* DiseaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */; };
 		AF2051D3249F4FC400FAD59F /* DiseaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */; };
 		AF2051D6249F56A400FAD59F /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051D5249F56A400FAD59F /* BaseViewProtocol.swift */; };
 		AF2051E8249F570100FAD59F /* CustomViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051DA249F570100FAD59F /* CustomViewExtension.swift */; };
@@ -31,6 +43,15 @@
 		AF2051FC249F5E7A00FAD59F /* DiseaseListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */; };
 		AF2051FE249F5EB300FAD59F /* CustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */; };
 		AF205200249F73E500FAD59F /* DiseaseList.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2051FF249F73E500FAD59F /* DiseaseList.strings */; };
+		AF22C04124A0D5CC00C13820 /* HospitaList.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF22C04024A0D5CC00C13820 /* HospitaList.strings */; };
+		AF22C04B24A0D8D000C13820 /* Hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22C04924A0D8D000C13820 /* Hospitals.json */; };
+		AF22C04C24A0D8D000C13820 /* Disease.json in Resources */ = {isa = PBXBuildFile; fileRef = AF22C04A24A0D8D000C13820 /* Disease.json */; };
+		AF22C05224A0DE0E00C13820 /* LevelOfPain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22C05124A0DE0E00C13820 /* LevelOfPain.swift */; };
+		AF22C05524A0E7D500C13820 /* HospitaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22C05324A0E7D500C13820 /* HospitaListTableViewCell.swift */; };
+		AF22C05624A0E7D500C13820 /* HospitaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF22C05424A0E7D500C13820 /* HospitaListTableViewCell.xib */; };
+		AF2F16A224A40EEF00F3E237 /* Disease.json in Resources */ = {isa = PBXBuildFile; fileRef = AF2F16A024A40EEF00F3E237 /* Disease.json */; };
+		AF2F16A324A40EEF00F3E237 /* Hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AF2F16A124A40EEF00F3E237 /* Hospitals.json */; };
+		AF51EDB324A5679A004C8AF8 /* HospitalsNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51EDB224A5679A004C8AF8 /* HospitalsNetworkingTests.swift */; };
 		AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF645536249EFABD00530DA7 /* .swiftlint.yml */; };
 		AF64554D249F097D00530DA7 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = AF64554C249F097D00530DA7 /* .swiftformat */; };
 		AF645555249F0D2F00530DA7 /* HospitalListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645554249F0D2F00530DA7 /* HospitalListModel.swift */; };
@@ -43,8 +64,6 @@
 		AF645567249F3F1D00530DA7 /* HospitalsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645561249F3F1D00530DA7 /* HospitalsNetworking.swift */; };
 		AF64556F249F437400530DA7 /* SeverityLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */; };
 		AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645570249F43AF00530DA7 /* HospitaListViewController.swift */; };
-		AF645575249F441200530DA7 /* SeverityLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */; };
-		AF645577249F442100530DA7 /* HospitaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645576249F442100530DA7 /* HospitaListViewModel.swift */; };
 		AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557B249F452400530DA7 /* StoryboardSegues.swift */; };
 		AF64559E249F452400530DA7 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557C249F452400530DA7 /* StoryboardScenes.swift */; };
 		AF64559F249F452400530DA7 /* GeneratedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64557E249F452400530DA7 /* GeneratedStrings.swift */; };
@@ -52,8 +71,6 @@
 		AF6455A1249F452400530DA7 /* GeneratedFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645582249F452400530DA7 /* GeneratedFonts.swift */; };
 		AF6455A2249F452400530DA7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645584249F452400530DA7 /* Assets.swift */; };
 		AF6455A3249F452400530DA7 /* GeneratedJSONFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF645586249F452400530DA7 /* GeneratedJSONFiles.swift */; };
-		AF6455A5249F452400530DA7 /* DataStructures.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558A249F452400530DA7 /* DataStructures.strings */; };
-		AF6455A6249F452400530DA7 /* TabBar.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558B249F452400530DA7 /* TabBar.strings */; };
 		AF6455A7249F452400530DA7 /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF64558C249F452400530DA7 /* About.strings */; };
 		AF6455AC249F452400530DA7 /* StandardColors.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF645593249F452400530DA7 /* StandardColors.txt */; };
 		AF6455AD249F452400530DA7 /* source-sans-pro.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF645595249F452400530DA7 /* source-sans-pro.regular.ttf */; };
@@ -63,6 +80,12 @@
 		AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559A249F452400530DA7 /* Assets.xcassets */; };
 		AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559B249F452400530DA7 /* Icons.xcassets */; };
 		AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559C249F452400530DA7 /* ColorsAssets.xcassets */; };
+		AFB2B97C24A2167C003F7399 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97B24A2167C003F7399 /* Next.swift */; };
+		AFB2B97E24A2168C003F7399 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97D24A2168C003F7399 /* Page.swift */; };
+		AFB2B98024A218D5003F7399 /* SeverityLevel.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */; };
+		AFDD164E24A1C889007F6B92 /* SeverityLevelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */; };
+		AFDD164F24A1C889007F6B92 /* SeverityLevelCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */; };
+		AFF8890824A6E89F00187C98 /* DiseaseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AFF8890724A6E89F00187C98 /* DiseaseMock.json */; };
 		AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB85249EF634002E6D19 /* AppDelegate.swift */; };
 		AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */; };
 		AFFCBB8A249EF634002E6D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB89249EF634002E6D19 /* ViewController.swift */; };
@@ -99,11 +122,23 @@
 		68C1D70E2FDC2F9845EA4376 /* Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyHospitals-NearbyHospitalsUITests/Pods-NearbyHospitals-NearbyHospitalsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E0228072ECA0E4990C341AD /* Pods_NearbyHospitals_NearbyHospitalsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitals_NearbyHospitalsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76275DD3A5CEA40B270B2BBD /* Pods_NearbyHospitalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyHospitalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF14C38D24A2C41B008F13A2 /* DiseaseListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListViewModel.swift; sourceTree = "<group>"; };
+		AF14C38E24A2C41B008F13A2 /* DiseaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseModel.swift; sourceTree = "<group>"; };
+		AF14C39024A2C41B008F13A2 /* HospitaListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitaListViewModel.swift; sourceTree = "<group>"; };
+		AF14C39124A2C41B008F13A2 /* HospitaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitaModel.swift; sourceTree = "<group>"; };
+		AF14C39324A2C41B008F13A2 /* SeverityLevelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewModel.swift; sourceTree = "<group>"; };
+		AF14C39A24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseListViewModelTests.swift; sourceTree = "<group>"; };
+		AF14C39C24A2C5C5008F13A2 /* HospitaListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListViewModelTests.swift; sourceTree = "<group>"; };
+		AF14C39E24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewModelTests.swift; sourceTree = "<group>"; };
+		AF14C3A024A2C64A008F13A2 /* Cuckoo-GeneratedMocks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Cuckoo-GeneratedMocks.sh"; sourceTree = "<group>"; };
+		AF14C3A224A2C6D7008F13A2 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		AF14C3A524A2D88B008F13A2 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		AF14C3A624A2D88B008F13A2 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AF14C3A924A2D88B008F13A2 /* MaterializedSequenceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterializedSequenceResult.swift; sourceTree = "<group>"; };
 		AF2051C5249F4A0400FAD59F /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		AF2051C8249F4F2F00FAD59F /* SeverityLevelRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityLevelRepository.swift; sourceTree = "<group>"; };
 		AF2051C9249F4F2F00FAD59F /* HospitaListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitaListRepository.swift; sourceTree = "<group>"; };
 		AF2051CE249F4F6800FAD59F /* DiseaseListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListRepository.swift; sourceTree = "<group>"; };
-		AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListViewModel.swift; sourceTree = "<group>"; };
 		AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiseaseListViewController.swift; sourceTree = "<group>"; };
 		AF2051D5249F56A400FAD59F /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		AF2051DA249F570100FAD59F /* CustomViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewExtension.swift; sourceTree = "<group>"; };
@@ -121,6 +156,15 @@
 		AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiseaseListTableViewCell.xib; sourceTree = "<group>"; };
 		AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFooterView.swift; sourceTree = "<group>"; };
 		AF2051FF249F73E500FAD59F /* DiseaseList.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DiseaseList.strings; sourceTree = "<group>"; };
+		AF22C04024A0D5CC00C13820 /* HospitaList.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HospitaList.strings; sourceTree = "<group>"; };
+		AF22C04924A0D8D000C13820 /* Hospitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hospitals.json; sourceTree = "<group>"; };
+		AF22C04A24A0D8D000C13820 /* Disease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Disease.json; sourceTree = "<group>"; };
+		AF22C05124A0DE0E00C13820 /* LevelOfPain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelOfPain.swift; sourceTree = "<group>"; };
+		AF22C05324A0E7D500C13820 /* HospitaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListTableViewCell.swift; sourceTree = "<group>"; };
+		AF22C05424A0E7D500C13820 /* HospitaListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitaListTableViewCell.xib; sourceTree = "<group>"; };
+		AF2F16A024A40EEF00F3E237 /* Disease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Disease.json; sourceTree = "<group>"; };
+		AF2F16A124A40EEF00F3E237 /* Hospitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hospitals.json; sourceTree = "<group>"; };
+		AF51EDB224A5679A004C8AF8 /* HospitalsNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsNetworkingTests.swift; sourceTree = "<group>"; };
 		AF645536249EFABD00530DA7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AF64554C249F097D00530DA7 /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		AF645554249F0D2F00530DA7 /* HospitalListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListModel.swift; sourceTree = "<group>"; };
@@ -133,8 +177,6 @@
 		AF645561249F3F1D00530DA7 /* HospitalsNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsNetworking.swift; sourceTree = "<group>"; };
 		AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewController.swift; sourceTree = "<group>"; };
 		AF645570249F43AF00530DA7 /* HospitaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListViewController.swift; sourceTree = "<group>"; };
-		AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewModel.swift; sourceTree = "<group>"; };
-		AF645576249F442100530DA7 /* HospitaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaListViewModel.swift; sourceTree = "<group>"; };
 		AF64557B249F452400530DA7 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		AF64557C249F452400530DA7 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		AF64557E249F452400530DA7 /* GeneratedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedStrings.swift; sourceTree = "<group>"; };
@@ -142,8 +184,6 @@
 		AF645582249F452400530DA7 /* GeneratedFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedFonts.swift; sourceTree = "<group>"; };
 		AF645584249F452400530DA7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		AF645586249F452400530DA7 /* GeneratedJSONFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedJSONFiles.swift; sourceTree = "<group>"; };
-		AF64558A249F452400530DA7 /* DataStructures.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DataStructures.strings; sourceTree = "<group>"; };
-		AF64558B249F452400530DA7 /* TabBar.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TabBar.strings; sourceTree = "<group>"; };
 		AF64558C249F452400530DA7 /* About.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = About.strings; sourceTree = "<group>"; };
 		AF645593249F452400530DA7 /* StandardColors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StandardColors.txt; sourceTree = "<group>"; };
 		AF645595249F452400530DA7 /* source-sans-pro.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.regular.ttf"; sourceTree = "<group>"; };
@@ -153,6 +193,12 @@
 		AF64559A249F452400530DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF64559B249F452400530DA7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF64559C249F452400530DA7 /* ColorsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsAssets.xcassets; sourceTree = "<group>"; };
+		AFB2B97B24A2167C003F7399 /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
+		AFB2B97D24A2168C003F7399 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SeverityLevel.strings; sourceTree = "<group>"; };
+		AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelCollectionCell.swift; sourceTree = "<group>"; };
+		AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeverityLevelCollectionCell.xib; sourceTree = "<group>"; };
+		AFF8890724A6E89F00187C98 /* DiseaseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DiseaseMock.json; sourceTree = "<group>"; };
 		AFFCBB82249EF634002E6D19 /* NearbyHospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyHospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBB85249EF634002E6D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +254,73 @@
 				1F0A2ADA1BD351189277182C /* Pods-NearbyHospitalsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF14C38B24A2C41B008F13A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C38C24A2C41B008F13A2 /* DiseaseListViewModel */,
+				AF14C38F24A2C41B008F13A2 /* HospitaListViewModel */,
+				AF14C39224A2C41B008F13A2 /* SeverityLevelViewModel */,
+			);
+			name = ViewModel;
+			path = NearbyHospitals/ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		AF14C38C24A2C41B008F13A2 /* DiseaseListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C38D24A2C41B008F13A2 /* DiseaseListViewModel.swift */,
+				AF14C38E24A2C41B008F13A2 /* DiseaseModel.swift */,
+			);
+			path = DiseaseListViewModel;
+			sourceTree = "<group>";
+		};
+		AF14C38F24A2C41B008F13A2 /* HospitaListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C39024A2C41B008F13A2 /* HospitaListViewModel.swift */,
+				AF14C39124A2C41B008F13A2 /* HospitaModel.swift */,
+			);
+			path = HospitaListViewModel;
+			sourceTree = "<group>";
+		};
+		AF14C39224A2C41B008F13A2 /* SeverityLevelViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C39324A2C41B008F13A2 /* SeverityLevelViewModel.swift */,
+			);
+			path = SeverityLevelViewModel;
+			sourceTree = "<group>";
+		};
+		AF14C39924A2C58A008F13A2 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C39A24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift */,
+				AF14C39C24A2C5C5008F13A2 /* HospitaListViewModelTests.swift */,
+				AF14C39E24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		AF14C3A424A2D88B008F13A2 /* MockResources */ = {
+			isa = PBXGroup;
+			children = (
+				AFF8890724A6E89F00187C98 /* DiseaseMock.json */,
+				AF2F16A024A40EEF00F3E237 /* Disease.json */,
+				AF2F16A124A40EEF00F3E237 /* Hospitals.json */,
+				AF14C3A524A2D88B008F13A2 /* TestError.swift */,
+				AF14C3A624A2D88B008F13A2 /* MockData.swift */,
+			);
+			path = MockResources;
+			sourceTree = "<group>";
+		};
+		AF14C3A824A2D88B008F13A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AF14C3A924A2D88B008F13A2 /* MaterializedSequenceResult.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		AF2051C7249F4F2F00FAD59F /* Repository */ = {
@@ -291,13 +404,25 @@
 				AF2051F9249F5E7A00FAD59F /* DiseaseListTableViewCell.swift */,
 				AF2051FA249F5E7A00FAD59F /* DiseaseListTableViewCell.xib */,
 				AF2051FD249F5EB300FAD59F /* CustomHeaderFooterView.swift */,
+				AF22C05324A0E7D500C13820 /* HospitaListTableViewCell.swift */,
+				AF22C05424A0E7D500C13820 /* HospitaListTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		AF22C04824A0D8D000C13820 /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				AF22C04A24A0D8D000C13820 /* Disease.json */,
+				AF22C04924A0D8D000C13820 /* Hospitals.json */,
+			);
+			path = JsonFile;
 			sourceTree = "<group>";
 		};
 		AF64554B249F091B00530DA7 /* scripts */ = {
 			isa = PBXGroup;
 			children = (
+				AF14C3A024A2C64A008F13A2 /* Cuckoo-GeneratedMocks.sh */,
 				AF2051C5249F4A0400FAD59F /* swiftgen.yml */,
 				AF64554C249F097D00530DA7 /* .swiftformat */,
 				AF645536249EFABD00530DA7 /* .swiftlint.yml */,
@@ -308,20 +433,12 @@
 		AF645553249F0D1D00530DA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFB2B97A24A2166C003F7399 /* Common */,
 				AF645554249F0D2F00530DA7 /* HospitalListModel.swift */,
 				AF645556249F0E8C00530DA7 /* IllnessListModel.swift */,
+				AF22C05124A0DE0E00C13820 /* LevelOfPain.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		AF645558249F3E4C00530DA7 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AF2051D0249F4F8200FAD59F /* DiseaseListViewModel.swift */,
-				AF645574249F441200530DA7 /* SeverityLevelViewModel.swift */,
-				AF645576249F442100530DA7 /* HospitaListViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AF645559249F3F1D00530DA7 /* NetworkLayer */ = {
@@ -367,6 +484,7 @@
 		AF64556B249F408700530DA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AFDD164B24A1C856007F6B92 /* CollectionViewCell */,
 				AF2051F8249F5E5300FAD59F /* TableViewCell */,
 				AF2051F3249F57CB00FAD59F /* CustomViews */,
 			);
@@ -447,7 +565,7 @@
 			isa = PBXGroup;
 			children = (
 				AF645588249F452400530DA7 /* Strings */,
-				AF64558D249F452400530DA7 /* JsonFile */,
+				AF22C04824A0D8D000C13820 /* JsonFile */,
 				AF645592249F452400530DA7 /* Colors */,
 				AF645594249F452400530DA7 /* Fonts */,
 				AF645599249F452400530DA7 /* Assets */,
@@ -459,18 +577,11 @@
 			isa = PBXGroup;
 			children = (
 				AF2051FF249F73E500FAD59F /* DiseaseList.strings */,
-				AF64558A249F452400530DA7 /* DataStructures.strings */,
-				AF64558B249F452400530DA7 /* TabBar.strings */,
+				AF22C04024A0D5CC00C13820 /* HospitaList.strings */,
+				AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */,
 				AF64558C249F452400530DA7 /* About.strings */,
 			);
 			path = Strings;
-			sourceTree = "<group>";
-		};
-		AF64558D249F452400530DA7 /* JsonFile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JsonFile;
 			sourceTree = "<group>";
 		};
 		AF645592249F452400530DA7 /* Colors */ = {
@@ -502,6 +613,24 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		AFB2B97A24A2166C003F7399 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AFB2B97B24A2167C003F7399 /* Next.swift */,
+				AFB2B97D24A2168C003F7399 /* Page.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AFDD164B24A1C856007F6B92 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */,
+				AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		AFFCBB79249EF634002E6D19 = {
 			isa = PBXGroup;
 			children = (
@@ -531,7 +660,7 @@
 				AF645559249F3F1D00530DA7 /* NetworkLayer */,
 				AF645553249F0D1D00530DA7 /* Models */,
 				AF2051C7249F4F2F00FAD59F /* Repository */,
-				AF645558249F3E4C00530DA7 /* ViewModel */,
+				AF14C38B24A2C41B008F13A2 /* ViewModel */,
 				AF64556A249F406A00530DA7 /* ViewController */,
 				AF64556B249F408700530DA7 /* Views */,
 				AF645578249F452400530DA7 /* Generated */,
@@ -550,7 +679,12 @@
 		AFFCBB9B249EF635002E6D19 /* NearbyHospitalsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF14C3A424A2D88B008F13A2 /* MockResources */,
+				AF14C3A824A2D88B008F13A2 /* Utility */,
+				AF14C39924A2C58A008F13A2 /* ViewModelTests */,
+				AF14C3A224A2C6D7008F13A2 /* GeneratedMocks.swift */,
 				AFFCBB9C249EF635002E6D19 /* NearbyHospitalsTests.swift */,
+				AF51EDB224A5679A004C8AF8 /* HospitalsNetworkingTests.swift */,
 				AFFCBB9E249EF635002E6D19 /* Info.plist */,
 			);
 			path = NearbyHospitalsTests;
@@ -687,22 +821,27 @@
 			files = (
 				AF64553B249EFABD00530DA7 /* .swiftlint.yml in Resources */,
 				AFFCBB92249EF635002E6D19 /* LaunchScreen.storyboard in Resources */,
-				AF6455A6249F452400530DA7 /* TabBar.strings in Resources */,
+				AF22C04B24A0D8D000C13820 /* Hospitals.json in Resources */,
+				AF22C05624A0E7D500C13820 /* HospitaListTableViewCell.xib in Resources */,
+				AFDD164F24A1C889007F6B92 /* SeverityLevelCollectionCell.xib in Resources */,
 				AF6455A7249F452400530DA7 /* About.strings in Resources */,
 				AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */,
+				AF22C04C24A0D8D000C13820 /* Disease.json in Resources */,
 				AF2051C6249F4A0400FAD59F /* swiftgen.yml in Resources */,
 				AF2051FC249F5E7A00FAD59F /* DiseaseListTableViewCell.xib in Resources */,
 				AF205200249F73E500FAD59F /* DiseaseList.strings in Resources */,
 				AF6455AF249F452400530DA7 /* source-sans-pro.light.ttf in Resources */,
 				AF6455AD249F452400530DA7 /* source-sans-pro.regular.ttf in Resources */,
 				AF6455B0249F452400530DA7 /* source-sans-pro.bold.ttf in Resources */,
-				AF6455A5249F452400530DA7 /* DataStructures.strings in Resources */,
 				AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */,
 				AF6455AC249F452400530DA7 /* StandardColors.txt in Resources */,
+				AFB2B98024A218D5003F7399 /* SeverityLevel.strings in Resources */,
 				AFFCBB8D249EF634002E6D19 /* Main.storyboard in Resources */,
 				AF6455AE249F452400530DA7 /* kitten_swash.ttf in Resources */,
+				AF14C3A124A2C64A008F13A2 /* Cuckoo-GeneratedMocks.sh in Resources */,
 				AF64554D249F097D00530DA7 /* .swiftformat in Resources */,
 				AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */,
+				AF22C04124A0D5CC00C13820 /* HospitaList.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +849,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2F16A224A40EEF00F3E237 /* Disease.json in Resources */,
+				AF2F16A324A40EEF00F3E237 /* Hospitals.json in Resources */,
+				AFF8890824A6E89F00187C98 /* DiseaseMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,12 +990,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2051E8249F570100FAD59F /* CustomViewExtension.swift in Sources */,
+				AF22C05524A0E7D500C13820 /* HospitaListTableViewCell.swift in Sources */,
+				AFB2B97E24A2168C003F7399 /* Page.swift in Sources */,
 				AF2051CC249F4F2F00FAD59F /* HospitaListRepository.swift in Sources */,
 				AF645557249F0E8C00530DA7 /* IllnessListModel.swift in Sources */,
 				AF6455A2249F452400530DA7 /* Assets.swift in Sources */,
+				AF14C39824A2C41B008F13A2 /* SeverityLevelViewModel.swift in Sources */,
 				AF2051D3249F4FC400FAD59F /* DiseaseListViewController.swift in Sources */,
 				AF2051CB249F4F2F00FAD59F /* SeverityLevelRepository.swift in Sources */,
 				AFFCBB8A249EF634002E6D19 /* ViewController.swift in Sources */,
+				AF22C05224A0DE0E00C13820 /* LevelOfPain.swift in Sources */,
 				AF2051CF249F4F6800FAD59F /* DiseaseListRepository.swift in Sources */,
 				AF645564249F3F1D00530DA7 /* WebService.swift in Sources */,
 				AF2051EA249F570100FAD59F /* FontExtension.swift in Sources */,
@@ -861,19 +1007,22 @@
 				AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */,
 				AF645565249F3F1D00530DA7 /* URL+Extensions.swift in Sources */,
 				AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */,
+				AF14C39624A2C41B008F13A2 /* HospitaListViewModel.swift in Sources */,
+				AF14C39524A2C41B008F13A2 /* DiseaseModel.swift in Sources */,
 				AF2051FB249F5E7A00FAD59F /* DiseaseListTableViewCell.swift in Sources */,
+				AFDD164E24A1C889007F6B92 /* SeverityLevelCollectionCell.swift in Sources */,
 				AF2051F6249F57CB00FAD59F /* NibLoadableView.swift in Sources */,
-				AF645575249F441200530DA7 /* SeverityLevelViewModel.swift in Sources */,
 				AF2051E9249F570100FAD59F /* UIButton+Extensions.swift in Sources */,
+				AF14C39724A2C41B008F13A2 /* HospitaModel.swift in Sources */,
 				AF645562249F3F1D00530DA7 /* URLRequest+Extensions.swift in Sources */,
 				AF2051FE249F5EB300FAD59F /* CustomHeaderFooterView.swift in Sources */,
 				AF2051EB249F570100FAD59F /* UICollectionView+Extension.swift in Sources */,
-				AF2051D1249F4F8200FAD59F /* DiseaseListViewModel.swift in Sources */,
+				AFB2B97C24A2167C003F7399 /* Next.swift in Sources */,
 				AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */,
 				AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */,
+				AF14C39424A2C41B008F13A2 /* DiseaseListViewModel.swift in Sources */,
 				AF2051EC249F570100FAD59F /* UIViewControllerExtension.swift in Sources */,
 				AF645563249F3F1D00530DA7 /* WebServiceProtocol.swift in Sources */,
-				AF645577249F442100530DA7 /* HospitaListViewModel.swift in Sources */,
 				AF645567249F3F1D00530DA7 /* HospitalsNetworking.swift in Sources */,
 				AF64559F249F452400530DA7 /* GeneratedStrings.swift in Sources */,
 				AF2051F1249F570100FAD59F /* ColourConstant.swift in Sources */,
@@ -895,7 +1044,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF14C3AA24A2D88C008F13A2 /* TestError.swift in Sources */,
+				AF51EDB324A5679A004C8AF8 /* HospitalsNetworkingTests.swift in Sources */,
 				AFFCBB9D249EF635002E6D19 /* NearbyHospitalsTests.swift in Sources */,
+				AF14C39D24A2C5C5008F13A2 /* HospitaListViewModelTests.swift in Sources */,
+				AF14C39F24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift in Sources */,
+				AF14C3AD24A2D88C008F13A2 /* MaterializedSequenceResult.swift in Sources */,
+				AF14C39B24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift in Sources */,
+				AF14C3AB24A2D88C008F13A2 /* MockData.swift in Sources */,
+				AF14C3A324A2C6D7008F13A2 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
