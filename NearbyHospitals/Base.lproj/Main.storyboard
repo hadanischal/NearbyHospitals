@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,6 +32,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="wDe-qZ-QcS"/>
+                    <connections>
+                        <segue destination="6Rk-a2-FkX" kind="show" id="E7u-4N-ZNU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACn-gv-jza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +57,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1a-rw-SCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1318.840579710145" y="782.8125"/>
+        </scene>
+        <!--Hospita List View Controller-->
+        <scene sceneID="4vR-Zh-kPu">
+            <objects>
+                <tableViewController storyboardIdentifier="HospitaListViewController" id="8Ud-wj-tt5" customClass="HospitaListViewController" customModule="NearbyHospitals" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fv6-2h-cgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jEm-p0-bY9">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jEm-p0-bY9" id="EYl-qJ-F0k">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Ud-wj-tt5" id="gfA-vw-0a0"/>
+                            <outlet property="delegate" destination="8Ud-wj-tt5" id="YOd-AF-j1T"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WRB-mg-lC2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE0-pW-SxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4010" y="783"/>
+        </scene>
+        <!--Severity Level View Controller-->
+        <scene sceneID="BvU-6X-CFa">
+            <objects>
+                <viewController storyboardIdentifier="SeverityLevelViewController" id="6Rk-a2-FkX" customClass="SeverityLevelViewController" customModule="NearbyHospitals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Asb-jP-36P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-R9-OJt">
+                                <rect key="frame" x="10" y="269" width="394" height="358"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oXC-5R-cUB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7tR-pv-at0">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YmV-LU-zqb">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Rk-a2-FkX" id="dpE-sR-yhh"/>
+                                    <outlet property="delegate" destination="6Rk-a2-FkX" id="BkN-6C-hyp"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qq1-R9-OJt" firstAttribute="height" secondItem="Asb-jP-36P" secondAttribute="height" multiplier="0.4" id="1zv-UH-Z9q"/>
+                            <constraint firstItem="qq1-R9-OJt" firstAttribute="centerY" secondItem="Asb-jP-36P" secondAttribute="centerY" id="QDc-DJ-w7l"/>
+                            <constraint firstItem="qq1-R9-OJt" firstAttribute="leading" secondItem="xaj-Hg-aZL" secondAttribute="leading" constant="10" id="jgt-lL-mMu"/>
+                            <constraint firstItem="xaj-Hg-aZL" firstAttribute="trailing" secondItem="qq1-R9-OJt" secondAttribute="trailing" constant="10" id="rpx-Rf-lEr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xaj-Hg-aZL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QXl-H2-z94"/>
+                    <connections>
+                        <outlet property="collectionView" destination="qq1-R9-OJt" id="hfU-Wn-jqB"/>
+                        <segue destination="8Ud-wj-tt5" kind="show" id="PZO-yA-qVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrX-I4-mV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3126" y="783"/>
         </scene>
     </scenes>
 </document>

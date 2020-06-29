@@ -1,0 +1,46 @@
+{
+    "_embedded": {
+        "illnesses": [{
+            "illness": {
+                "name": "Mortal Cold",
+                "id": 1
+            },
+            "_links": {
+                "illnesses": {
+                    "href": "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses"
+                },
+                "self": {
+                    "href":
+                    "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses/1"
+                }
+            }
+        }, {
+            "illness": {
+                "name": "Happy Euphoria",
+                "id": 2
+            },
+            "_links": {
+                "illnesses": {
+                    "href": "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses"
+                },
+                "self": {
+                    "href": "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses/2"
+                }
+            }
+        } ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses"
+        },
+        "next": {
+            "href": "http://dmmw-api.australiaeast.cloudapp.azure.com:8080/illnesses?limit=10&page=1"
+        }
+    },
+    "page": {
+        "size": 10,
+        "totalElements": 15,
+        "totalPages": 1,
+        "number": 0
+    }
+}
