@@ -47,7 +47,7 @@ final class HospitalsNetworkingTests: QuickSpec {
                         let res = testScheduler.start { observable }
 
                         expect(res.events.count).to(equal(2))
-                        let correctResult: [Recorded<Event<IllnessEmbedded?>>] = [Recorded.next(200, mockIllnessListModel.embedded), Recorded.completed(200)]
+                        let correctResult: [Recorded<Event<IllnessEmbedded>>] = [Recorded.next(200, mockIllnessListModel.embedded), Recorded.completed(200)]
                         expect(res.events).to(equal(correctResult))
                     }
                 }
@@ -64,7 +64,7 @@ final class HospitalsNetworkingTests: QuickSpec {
                         let res = testScheduler.start { observable }
 
                         expect(res.events.count).to(equal(1))
-                        let correctResult: [Recorded<Event<IllnessEmbedded?>>] = [Recorded.error(200, mockError)]
+                        let correctResult: [Recorded<Event<IllnessEmbedded>>] = [Recorded.error(200, mockError)]
                         expect(res.events).to(equal(correctResult))
                     }
                 }
@@ -84,7 +84,7 @@ final class HospitalsNetworkingTests: QuickSpec {
                         let res = testScheduler.start { observable }
 
                         expect(res.events.count).to(equal(2))
-                        let correctResult: [Recorded<Event<HospitalEmbedded?>>] = [Recorded.next(200, mockHospitalListModel.embedded), Recorded.completed(200)]
+                        let correctResult: [Recorded<Event<HospitalEmbedded>>] = [Recorded.next(200, mockHospitalListModel.embedded), Recorded.completed(200)]
                         expect(res.events).to(equal(correctResult))
                     }
                 }
@@ -101,7 +101,7 @@ final class HospitalsNetworkingTests: QuickSpec {
                         let res = testScheduler.start { observable }
 
                         expect(res.events.count).to(equal(1))
-                        let correctResult: [Recorded<Event<HospitalEmbedded?>>] = [Recorded.error(200, mockError)]
+                        let correctResult: [Recorded<Event<HospitalEmbedded>>] = [Recorded.error(200, mockError)]
                         expect(res.events).to(equal(correctResult))
                     }
                 }

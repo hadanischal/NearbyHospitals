@@ -48,6 +48,10 @@ final class HospitaListViewModelTests: QuickSpec {
                 expect(testViewModel.tableViewHeader).to(equal("Our suggested Hospitals:"))
             }
 
+            it("sets the waitingTimeDescription correctly") {
+                expect(testViewModel.waitingTimeDescription).to(equal("Waiting time: "))
+            }
+
             context("When server request get succeed") {
                 beforeEach {
                     stub(mockDiseaseListHandler) { stub in

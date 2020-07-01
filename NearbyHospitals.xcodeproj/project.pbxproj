@@ -80,6 +80,7 @@
 		AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559A249F452400530DA7 /* Assets.xcassets */; };
 		AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559B249F452400530DA7 /* Icons.xcassets */; };
 		AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559C249F452400530DA7 /* ColorsAssets.xcassets */; };
+		AF99DE0D24AC31D400E82C03 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF99DE0C24AC31D400E82C03 /* Int+Extension.swift */; };
 		AFB2B97C24A2167C003F7399 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97B24A2167C003F7399 /* Next.swift */; };
 		AFB2B97E24A2168C003F7399 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97D24A2168C003F7399 /* Page.swift */; };
 		AFB2B98024A218D5003F7399 /* SeverityLevel.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */; };
@@ -193,6 +194,7 @@
 		AF64559A249F452400530DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF64559B249F452400530DA7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF64559C249F452400530DA7 /* ColorsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsAssets.xcassets; sourceTree = "<group>"; };
+		AF99DE0C24AC31D400E82C03 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		AFB2B97B24A2167C003F7399 /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
 		AFB2B97D24A2168C003F7399 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SeverityLevel.strings; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 		AF2051D8249F570100FAD59F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AF99DE0B24AC31B100E82C03 /* DateExtensions */,
 				AF2051D9249F570100FAD59F /* UIViewControllerExtension */,
 				AF2051DD249F570100FAD59F /* UICollectionView+Extension */,
 				AF2051E2249F570100FAD59F /* UITableView+Extensions */,
@@ -611,6 +614,14 @@
 				AF64559C249F452400530DA7 /* ColorsAssets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		AF99DE0B24AC31B100E82C03 /* DateExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF99DE0C24AC31D400E82C03 /* Int+Extension.swift */,
+			);
+			path = DateExtensions;
 			sourceTree = "<group>";
 		};
 		AFB2B97A24A2166C003F7399 /* Common */ = {
@@ -1018,6 +1029,7 @@
 				AF2051FE249F5EB300FAD59F /* CustomHeaderFooterView.swift in Sources */,
 				AF2051EB249F570100FAD59F /* UICollectionView+Extension.swift in Sources */,
 				AFB2B97C24A2167C003F7399 /* Next.swift in Sources */,
+				AF99DE0D24AC31D400E82C03 /* Int+Extension.swift in Sources */,
 				AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */,
 				AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */,
 				AF14C39424A2C41B008F13A2 /* DiseaseListViewModel.swift in Sources */,

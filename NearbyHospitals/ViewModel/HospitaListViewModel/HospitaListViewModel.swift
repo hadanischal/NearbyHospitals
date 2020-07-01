@@ -13,6 +13,7 @@ protocol HospitaListDataSource: AnyObject {
     var navigationTitle: Observable<String> { get }
     var numbersOfHospital: Int { get }
     var tableViewHeader: String { get }
+    var waitingTimeDescription: String { get }
     var updateInfo: Observable<Bool> { get }
     func viewDidLoad()
     func hospitals(forIndex index: Int) -> HospitaModel
@@ -22,6 +23,7 @@ final class HospitaListViewModel: HospitaListDataSource {
     var navigationTitle: Observable<String> { Observable.just(L10n.HospitaList.navigationTitle) }
     var numbersOfHospital: Int { self.hospitalList.count }
     var tableViewHeader: String { L10n.HospitaList.tableViewTitle }
+    var waitingTimeDescription: String { L10n.HospitaList.waitingTime }
     let updateInfo: Observable<Bool>
 
     private let disposeBag = DisposeBag()
@@ -39,8 +41,9 @@ final class HospitaListViewModel: HospitaListDataSource {
     }
 
     func viewDidLoad() {
-        hospitalListHandling.getHospitalsInfo()
-            .map { ($0?.hospitals ?? []) }
+        hospitalListHandling
+            .getHospitalsInfo()
+            .map(\.hospitals)
             .compactMap { illnessList -> [HospitaModel] in
                 illnessList.map { HospitaModel($0, time: self.waitingTime($0.waitingList)) }
             }
