@@ -37,8 +37,9 @@ final class DiseaseListViewModel: DiseaseListDataSource {
     }
 
     func viewDidLoad() {
-        diseaseListHandler.getDiseaseInfo()
-            .map { ($0?.illnesses ?? []) }
+        diseaseListHandler
+            .getDiseaseInfo()
+            .map(\.illnesses)
             .compactMap { illnessList -> [DiseaseModel] in
                 illnessList.map { DiseaseModel($0) }
             }

@@ -10,11 +10,11 @@ import Foundation
 import RxSwift
 
 protocol DiseaseListHandling {
-    func getDiseaseInfo() -> Observable<IllnessEmbedded?>
+    func getDiseaseInfo() -> Observable<IllnessEmbedded>
 }
 
 protocol HospitalListHandling {
-    func getHospitalsInfo() -> Observable<HospitalEmbedded?>
+    func getHospitalsInfo() -> Observable<HospitalEmbedded>
 }
 
 typealias HospitalsNetwork = DiseaseListHandling & HospitalListHandling
@@ -26,22 +26,22 @@ final class HospitalsNetworking: HospitalsNetwork {
         self.webService = webService
     }
 
-    func getDiseaseInfo() -> Observable<IllnessEmbedded?> {
-        guard let url = URL.illnessesUrl else { return Observable<IllnessEmbedded?>.error(NetworkError.badURL) }
+    func getDiseaseInfo() -> Observable<IllnessEmbedded> {
+        guard let url = URL.illnessesUrl else { return Observable<IllnessEmbedded>.error(NetworkError.badURL) }
         var res: Resource<IllnessListModel> { Resource(url: url) }
 
         return webService.load(resource: res)
-            .map { $0.embedded }
+            .map(\.embedded)
             .asObservable()
             .retry(2)
     }
 
-    func getHospitalsInfo() -> Observable<HospitalEmbedded?> {
-        guard let url = URL.hospitalsUrl else { return Observable<HospitalEmbedded?>.error(NetworkError.badURL) }
+    func getHospitalsInfo() -> Observable<HospitalEmbedded> {
+        guard let url = URL.hospitalsUrl else { return Observable<HospitalEmbedded>.error(NetworkError.badURL) }
 
         var res: Resource<HospitalListModel> { Resource(url: url) }
         return webService.load(resource: res)
-            .map { $0.embedded }
+            .map(\.embedded)
             .asObservable()
             .retry(2)
     }
