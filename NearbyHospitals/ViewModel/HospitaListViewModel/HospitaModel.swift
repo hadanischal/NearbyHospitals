@@ -11,14 +11,13 @@ import Foundation
 struct HospitaModel: Equatable {
     let name: String
     let id: Int
-    let lat, lng: Double
+    let location: Location
     let waitingTime: String
 
     init(_ hospital: Hospital, time: Int) {
         name = hospital.name
         id = hospital.id
-        lat = hospital.location.lat
-        lng = hospital.location.lng
-        waitingTime = time.dayHourMinute // L10n.HospitaList.averageTime(time.dayHourMinute)
+        location = hospital.location
+        waitingTime = time.dayHourMinute
     }
 }

@@ -68,7 +68,10 @@ final class HospitaListViewModelTests: QuickSpec {
                 it("it sets numbersOfIllness correctly") {
                     expect(testViewModel.numbersOfHospital).to(equal(10))
                 }
-
+                it("it sets correct hospitalList") {
+                    let correctResult = mockDiseaseModelList.hospitals.map { HospitaModel($0, time: waitingTime($0.waitingList)) }
+                    expect(testViewModel.hospitalList).to(equal(correctResult))
+                }
                 it("emits the jobs list to the UI") {
                     let observable = testViewModel.updateInfo.asObservable()
                     let res = testScheduler.start { observable }
@@ -93,6 +96,9 @@ final class HospitaListViewModelTests: QuickSpec {
                 }
                 it("it sets numbersOfIllness correctly") {
                     expect(testViewModel.numbersOfHospital).to(equal(0))
+                }
+                it("it sets correct hospitalList") {
+                    expect(testViewModel.hospitalList).to(equal([]))
                 }
                 it("doesnt emits jobs list to the UI") {
                     let observable = testViewModel.updateInfo.asObservable()
