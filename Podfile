@@ -12,6 +12,7 @@ target 'NearbyHospitals' do
   pod 'SwiftGen', '~> 6.0'
   pod 'Pecker'
   pod 'PKHUD', '~> 5.0'
+  pod 'SwiftRichString'
   
   target 'NearbyHospitalsTests' do
     inherit! :search_paths
