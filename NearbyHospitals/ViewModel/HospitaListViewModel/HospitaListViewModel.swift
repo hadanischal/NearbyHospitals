@@ -17,21 +17,21 @@ protocol HospitaListDataSource: AnyObject {
     var updateInfo: Observable<Bool> { get }
     func viewDidLoad()
     func hospitals(forIndex index: Int) -> HospitaModel
+    var hospitalList: [HospitaModel] { get }
 }
 
 final class HospitaListViewModel: HospitaListDataSource {
     var navigationTitle: Observable<String> { Observable.just(L10n.HospitaList.navigationTitle) }
-    var numbersOfHospital: Int { self.hospitalList.count }
+    var numbersOfHospital: Int { hospitalList.count }
     var tableViewHeader: String { L10n.HospitaList.tableViewTitle }
     var waitingTimeDescription: String { L10n.HospitaList.waitingTime }
     let updateInfo: Observable<Bool>
+    var hospitalList = [HospitaModel]()
 
-    private let disposeBag = DisposeBag()
-    private var hospitalList = [HospitaModel]()
     private let hospitalListHandling: HospitalListHandling
     private let levelOfPain: LevelOfPain
-
     private let updateInfoSubject = PublishSubject<Bool>()
+    private let disposeBag = DisposeBag()
 
     init(withHospitalListHandling hospitalListHandling: HospitalListHandling = HospitalsNetworking(),
          withLevelOfPain levelOfPain: LevelOfPain) {
