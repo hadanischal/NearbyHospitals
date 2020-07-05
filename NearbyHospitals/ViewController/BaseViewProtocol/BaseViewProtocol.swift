@@ -19,9 +19,8 @@ protocol BaseViewProtocol: AnyObject {
 }
 
 extension BaseViewProtocol {
-    /**
-     * Mark button as disabled
-     */
+    /// Mark button as disabled
+    /// - Parameter button: [UIButton] is button to disable
     func disableNoNnimate(_ button: UIButton) {
         // And off
         button.isUserInteractionEnabled = false
@@ -29,9 +28,8 @@ extension BaseViewProtocol {
         button.alpha = 0.5
     }
 
-    /**
-     * Mark button as disabled
-     */
+    /// Mark button as disabled
+    /// - Parameter button: [UIButton] is button to disable
     func disable(_ button: UIButton) {
         // And off
         button.isUserInteractionEnabled = false
@@ -46,9 +44,8 @@ extension BaseViewProtocol {
                        completion: nil)
     }
 
-    /**
-     * Mark button as enabled
-     */
+    ///  Mark button as enabled
+    /// - Parameter button: [UIButton] is button to enable
     func enable(_ button: UIButton) {
         button.isUserInteractionEnabled = true
         button.isEnabled = true
@@ -62,16 +59,20 @@ extension BaseViewProtocol {
                        completion: nil)
     }
 
-    // Add the spinner in view controller
+    /// Add the spinner in view controller
     func createSpinnerView() {
         HUD.show(.progress)
     }
 
-    // Remove the spinner in view controller
+    /// Remove the spinner in view controller
     func removeSpinnerView() {
         HUD.hide()
     }
 
+    /// present SFSafariViewController
+    /// - Parameters:
+    ///   - url: web url to load in safari view
+    ///   - viewController: viewController on which [SFSafariViewController] is presented
     func presentSafariViewController(for url: URL, viewController: UIViewController) {
         let safariController = SFSafariViewController(url: url)
         if #available(iOS 10, *) {
