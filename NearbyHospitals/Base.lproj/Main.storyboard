@@ -33,7 +33,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="wDe-qZ-QcS"/>
                     <connections>
-                        <segue destination="6Rk-a2-FkX" kind="show" id="E7u-4N-ZNU"/>
+                        <segue destination="6Rk-a2-FkX" kind="show" identifier="toSeverityLevelView" id="E7u-4N-ZNU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACn-gv-jza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,6 +82,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="WRB-mg-lC2"/>
+                    <connections>
+                        <segue destination="Z6J-zI-nFI" kind="show" identifier="toMapViewController" id="q2W-A8-3KF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bE0-pW-SxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,12 +135,42 @@
                     <navigationItem key="navigationItem" id="QXl-H2-z94"/>
                     <connections>
                         <outlet property="collectionView" destination="qq1-R9-OJt" id="hfU-Wn-jqB"/>
-                        <segue destination="8Ud-wj-tt5" kind="show" id="PZO-yA-qVP"/>
+                        <segue destination="8Ud-wj-tt5" kind="show" identifier="toHospitaListViewController" id="PZO-yA-qVP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrX-I4-mV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3126" y="783"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="qLz-hA-cQ3">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="Z6J-zI-nFI" customClass="MapViewController" customModule="NearbyHospitals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2t-Pp-9xA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="njA-51-pyS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EAx-fc-82D" firstAttribute="bottom" secondItem="njA-51-pyS" secondAttribute="bottom" id="7se-6h-rhn"/>
+                            <constraint firstItem="njA-51-pyS" firstAttribute="leading" secondItem="EAx-fc-82D" secondAttribute="leading" id="Oa9-Pu-VT9"/>
+                            <constraint firstItem="EAx-fc-82D" firstAttribute="trailing" secondItem="njA-51-pyS" secondAttribute="trailing" id="P9h-KE-7in"/>
+                            <constraint firstItem="njA-51-pyS" firstAttribute="top" secondItem="EAx-fc-82D" secondAttribute="top" id="jc1-2s-cBA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAx-fc-82D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5O0-4e-Pvz"/>
+                    <connections>
+                        <outlet property="mapView" destination="njA-51-pyS" id="EkR-WM-SFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDq-pS-zTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4853.6231884057979" y="782.8125"/>
         </scene>
     </scenes>
 </document>
