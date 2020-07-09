@@ -80,12 +80,17 @@
 		AF6455B1249F452400530DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559A249F452400530DA7 /* Assets.xcassets */; };
 		AF6455B2249F452400530DA7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559B249F452400530DA7 /* Icons.xcassets */; };
 		AF6455B3249F452400530DA7 /* ColorsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF64559C249F452400530DA7 /* ColorsAssets.xcassets */; };
+		AF70B06C24B0915600EBB363 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF70B06B24B0915600EBB363 /* MapViewModelTests.swift */; };
+		AF98A74424ACA4E80096E699 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98A74224ACA4E80096E699 /* MapViewModel.swift */; };
+		AF98A74724ACA6CC0096E699 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98A74624ACA6CC0096E699 /* ArtworkView.swift */; };
 		AF99DE0D24AC31D400E82C03 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF99DE0C24AC31D400E82C03 /* Int+Extension.swift */; };
+		AFA1371224AC9EDA00F99203 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1371124AC9EDA00F99203 /* MapViewController.swift */; };
 		AFB2B97C24A2167C003F7399 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97B24A2167C003F7399 /* Next.swift */; };
 		AFB2B97E24A2168C003F7399 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2B97D24A2168C003F7399 /* Page.swift */; };
 		AFB2B98024A218D5003F7399 /* SeverityLevel.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */; };
 		AFDD164E24A1C889007F6B92 /* SeverityLevelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */; };
 		AFDD164F24A1C889007F6B92 /* SeverityLevelCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */; };
+		AFF53E0D24B005A5005F52F1 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF53E0C24B005A5005F52F1 /* MapModel.swift */; };
 		AFF8890824A6E89F00187C98 /* DiseaseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AFF8890724A6E89F00187C98 /* DiseaseMock.json */; };
 		AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB85249EF634002E6D19 /* AppDelegate.swift */; };
 		AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */; };
@@ -194,12 +199,17 @@
 		AF64559A249F452400530DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF64559B249F452400530DA7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF64559C249F452400530DA7 /* ColorsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsAssets.xcassets; sourceTree = "<group>"; };
+		AF70B06B24B0915600EBB363 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
+		AF98A74224ACA4E80096E699 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		AF98A74624ACA6CC0096E699 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 		AF99DE0C24AC31D400E82C03 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		AFA1371124AC9EDA00F99203 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AFB2B97B24A2167C003F7399 /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
 		AFB2B97D24A2168C003F7399 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AFB2B97F24A218D5003F7399 /* SeverityLevel.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SeverityLevel.strings; sourceTree = "<group>"; };
 		AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelCollectionCell.swift; sourceTree = "<group>"; };
 		AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeverityLevelCollectionCell.xib; sourceTree = "<group>"; };
+		AFF53E0C24B005A5005F52F1 /* MapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		AFF8890724A6E89F00187C98 /* DiseaseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DiseaseMock.json; sourceTree = "<group>"; };
 		AFFCBB82249EF634002E6D19 /* NearbyHospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyHospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBB85249EF634002E6D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +271,7 @@
 		AF14C38B24A2C41B008F13A2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AF98A74024ACA4E80096E699 /* MapViewModel */,
 				AF14C38C24A2C41B008F13A2 /* DiseaseListViewModel */,
 				AF14C38F24A2C41B008F13A2 /* HospitaListViewModel */,
 				AF14C39224A2C41B008F13A2 /* SeverityLevelViewModel */,
@@ -301,6 +312,7 @@
 				AF14C39A24A2C5A4008F13A2 /* DiseaseListViewModelTests.swift */,
 				AF14C39C24A2C5C5008F13A2 /* HospitaListViewModelTests.swift */,
 				AF14C39E24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift */,
+				AF70B06B24B0915600EBB363 /* MapViewModelTests.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -480,6 +492,7 @@
 				AF2051D2249F4FC400FAD59F /* DiseaseListViewController.swift */,
 				AF64556E249F437400530DA7 /* SeverityLevelViewController.swift */,
 				AF645570249F43AF00530DA7 /* HospitaListViewController.swift */,
+				AFA1371124AC9EDA00F99203 /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -487,6 +500,7 @@
 		AF64556B249F408700530DA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF98A74524ACA6C20096E699 /* ArtworkView */,
 				AFDD164B24A1C856007F6B92 /* CollectionViewCell */,
 				AF2051F8249F5E5300FAD59F /* TableViewCell */,
 				AF2051F3249F57CB00FAD59F /* CustomViews */,
@@ -614,6 +628,23 @@
 				AF64559C249F452400530DA7 /* ColorsAssets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		AF98A74024ACA4E80096E699 /* MapViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFF53E0C24B005A5005F52F1 /* MapModel.swift */,
+				AF98A74224ACA4E80096E699 /* MapViewModel.swift */,
+			);
+			path = MapViewModel;
+			sourceTree = "<group>";
+		};
+		AF98A74524ACA6C20096E699 /* ArtworkView */ = {
+			isa = PBXGroup;
+			children = (
+				AF98A74624ACA6CC0096E699 /* ArtworkView.swift */,
+			);
+			path = ArtworkView;
 			sourceTree = "<group>";
 		};
 		AF99DE0B24AC31B100E82C03 /* DateExtensions */ = {
@@ -1018,6 +1049,7 @@
 				AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */,
 				AF645565249F3F1D00530DA7 /* URL+Extensions.swift in Sources */,
 				AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */,
+				AF98A74724ACA6CC0096E699 /* ArtworkView.swift in Sources */,
 				AF14C39624A2C41B008F13A2 /* HospitaListViewModel.swift in Sources */,
 				AF14C39524A2C41B008F13A2 /* DiseaseModel.swift in Sources */,
 				AF2051FB249F5E7A00FAD59F /* DiseaseListTableViewCell.swift in Sources */,
@@ -1033,14 +1065,17 @@
 				AF645571249F43AF00530DA7 /* HospitaListViewController.swift in Sources */,
 				AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */,
 				AF14C39424A2C41B008F13A2 /* DiseaseListViewModel.swift in Sources */,
+				AFA1371224AC9EDA00F99203 /* MapViewController.swift in Sources */,
 				AF2051EC249F570100FAD59F /* UIViewControllerExtension.swift in Sources */,
 				AF645563249F3F1D00530DA7 /* WebServiceProtocol.swift in Sources */,
 				AF645567249F3F1D00530DA7 /* HospitalsNetworking.swift in Sources */,
 				AF64559F249F452400530DA7 /* GeneratedStrings.swift in Sources */,
 				AF2051F1249F570100FAD59F /* ColourConstant.swift in Sources */,
 				AF64556F249F437400530DA7 /* SeverityLevelViewController.swift in Sources */,
+				AFF53E0D24B005A5005F52F1 /* MapModel.swift in Sources */,
 				AF2051EF249F570100FAD59F /* UITableView+Extensions.swift in Sources */,
 				AF645555249F0D2F00530DA7 /* HospitalListModel.swift in Sources */,
+				AF98A74424ACA4E80096E699 /* MapViewModel.swift in Sources */,
 				AF2051ED249F570100FAD59F /* NavigationControllerExtension.swift in Sources */,
 				AF64559E249F452400530DA7 /* StoryboardScenes.swift in Sources */,
 				AF2051F7249F57CB00FAD59F /* ReusableView.swift in Sources */,
@@ -1059,6 +1094,7 @@
 				AF14C3AA24A2D88C008F13A2 /* TestError.swift in Sources */,
 				AF51EDB324A5679A004C8AF8 /* HospitalsNetworkingTests.swift in Sources */,
 				AFFCBB9D249EF635002E6D19 /* NearbyHospitalsTests.swift in Sources */,
+				AF70B06C24B0915600EBB363 /* MapViewModelTests.swift in Sources */,
 				AF14C39D24A2C5C5008F13A2 /* HospitaListViewModelTests.swift in Sources */,
 				AF14C39F24A2C5DA008F13A2 /* SeverityLevelViewModelTests.swift in Sources */,
 				AF14C3AD24A2D88C008F13A2 /* MaterializedSequenceResult.swift in Sources */,
