@@ -1,0 +1,9 @@
+
+
+// HospitaListViewController
+
+"NAVIGATION_TITLE" = "Hospital List";
+"TABLE_VIEW_TITLE" = "Our suggested Hospitals:";
+"WAITING_TIME" = "Waiting time: "; //"Waiting time %d";
+"AVERAGE_TIME" = "Waiting time %@"; //"Waiting time %d";
+

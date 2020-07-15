@@ -1,0 +1,11 @@
+/* 
+  About.strings
+  SwiftAlgorithmsSecret
+
+  Created by Nischal Hada on 7/3/20.
+  Copyright © 2020 Nischal Hada. All rights reserved.
+*/
+
+
+"ABOUT_TITLE" = "Welcome to the Algorithms & Data Structures!";
+"ABOUT_DESCRIPTION" = "Here you'll find implementations of popular algorithms and data structures in everyone's favorite new language Swift, with detailed explanations of how they work.\n\nIf you're a computer science student who needs to learn this stuff for exams -- or if you're a self-taught programmer who wants to brush up on the theory behind your craft -- you've come to the right place!\n\nThe goal of this project is to explain how algorithms work. The focus is on clarity and readability of the code, not on making a reusable library that you can drop into your own projects. That said, most of the code should be ready for production use but you may need to tweak it to fit into your own codebase.\n\nCode is compatible with Xcode 9 and Swift 4. We'll keep this updated with the latest version of Swift.\n\nSuggestions and contributions are welcome! 😍";

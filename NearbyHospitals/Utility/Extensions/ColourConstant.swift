@@ -30,7 +30,7 @@ extension UIColor {
     }
 
     static var barTintColor: UIColor {
-        return ColorName.hospitalBlue.color
+        return ColorName.primary.color
     }
 
     static var titleTintColor: UIColor {
