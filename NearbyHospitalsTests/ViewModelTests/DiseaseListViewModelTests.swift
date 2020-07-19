@@ -66,11 +66,24 @@ final class DiseaseListViewModelTests: QuickSpec {
                     expect(testViewModel.numbersOfIllness).to(equal(10))
                 }
 
-                it("emits the jobs list to the UI") {
+                it("emits the updateInfo to the UI") {
                     let observable = testViewModel.updateInfo.asObservable()
                     let res = testScheduler.start { observable }
                     expect(res.events.count).to(equal(1))
                     let correctResult = [Recorded.next(300, true)]
+                    expect(res.events).to(equal(correctResult))
+                }
+
+                it("wont emits the errorResult to the UI") {
+                    let res = testScheduler.start { testViewModel.errorResult }
+                    expect(res.events).toNot(beNil())
+                    expect(res.events.count).to(equal(0))
+                }
+
+                it("emits the isLoading to the UI") {
+                    let res = testScheduler.start { testViewModel.isLoading }
+                    expect(res.events.count).to(equal(2))
+                    let correctResult = [Recorded.next(200, false), Recorded.next(300, false)]
                     expect(res.events).to(equal(correctResult))
                 }
             }
@@ -91,14 +104,26 @@ final class DiseaseListViewModelTests: QuickSpec {
                 it("it sets numbersOfIllness correctly") {
                     expect(testViewModel.numbersOfIllness).to(equal(0))
                 }
-                it("doesnt emits jobs list to the UI") {
-                    testScheduler.scheduleAt(200) {
-                        testViewModel.viewDidLoad()
-                    }
+                it("doesnt emits updateInfo to the UI") {
                     let observable = testViewModel.updateInfo.asObservable()
                     let res = testScheduler.start { observable }
                     expect(res.events).toNot(beNil())
                     expect(res.events.count).to(equal(0))
+                }
+                it("emits the errorResult to the UI") {
+                    let res = testScheduler.start { testViewModel.errorResult.map { $0 as! MockError } }
+                    expect(res.events).toNot(beNil())
+                    expect(res.events.count).to(equal(1))
+
+                    let correctResult = [Recorded.next(300, mockError)]
+                    expect(res.events).to(equal(correctResult))
+                }
+
+                it("emits the isLoading to the UI") {
+                    let res = testScheduler.start { testViewModel.isLoading }
+                    expect(res.events.count).to(equal(2))
+                    let correctResult = [Recorded.next(200, false), Recorded.next(300, false)]
+                    expect(res.events).to(equal(correctResult))
                 }
             }
 
