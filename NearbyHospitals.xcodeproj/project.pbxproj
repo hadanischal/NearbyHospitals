@@ -88,6 +88,7 @@
 		AFDD164E24A1C889007F6B92 /* SeverityLevelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */; };
 		AFDD164F24A1C889007F6B92 /* SeverityLevelCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */; };
 		AFF53E0D24B005A5005F52F1 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF53E0C24B005A5005F52F1 /* MapModel.swift */; };
+		AFF59FD224C3C70F00973DE0 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF59FD124C3C70F00973DE0 /* BaseViewModelProtocol.swift */; };
 		AFF8890824A6E89F00187C98 /* DiseaseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AFF8890724A6E89F00187C98 /* DiseaseMock.json */; };
 		AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB85249EF634002E6D19 /* AppDelegate.swift */; };
 		AFFCBB88249EF634002E6D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCBB87249EF634002E6D19 /* SceneDelegate.swift */; };
@@ -204,6 +205,7 @@
 		AFDD164C24A1C888007F6B92 /* SeverityLevelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelCollectionCell.swift; sourceTree = "<group>"; };
 		AFDD164D24A1C889007F6B92 /* SeverityLevelCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeverityLevelCollectionCell.xib; sourceTree = "<group>"; };
 		AFF53E0C24B005A5005F52F1 /* MapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		AFF59FD124C3C70F00973DE0 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		AFF8890724A6E89F00187C98 /* DiseaseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DiseaseMock.json; sourceTree = "<group>"; };
 		AFFCBB82249EF634002E6D19 /* NearbyHospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyHospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCBB85249EF634002E6D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		AF14C38B24A2C41B008F13A2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AFF59FD124C3C70F00973DE0 /* BaseViewModelProtocol.swift */,
 				AF98A74024ACA4E80096E699 /* MapViewModel */,
 				AF14C38C24A2C41B008F13A2 /* DiseaseListViewModel */,
 				AF14C38F24A2C41B008F13A2 /* HospitaListViewModel */,
@@ -1026,6 +1029,7 @@
 				AF645564249F3F1D00530DA7 /* WebService.swift in Sources */,
 				AF2051EA249F570100FAD59F /* FontExtension.swift in Sources */,
 				AF2051EE249F570100FAD59F /* BundleExtension.swift in Sources */,
+				AFF59FD224C3C70F00973DE0 /* BaseViewModelProtocol.swift in Sources */,
 				AFFCBB86249EF634002E6D19 /* AppDelegate.swift in Sources */,
 				AF645565249F3F1D00530DA7 /* URL+Extensions.swift in Sources */,
 				AF64559D249F452400530DA7 /* StoryboardSegues.swift in Sources */,
