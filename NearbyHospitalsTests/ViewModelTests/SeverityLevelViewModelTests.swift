@@ -41,7 +41,7 @@ final class SeverityLevelViewModelTests: QuickSpec {
             }
 
             it("it sets numbersOfIllness correctly") {
-                expect(testViewModel.numbersSeverity).to(equal(5))
+                expect(testViewModel.numberOfRowsInSection).to(equal(5))
             }
 
             context("Get severity info for index") {

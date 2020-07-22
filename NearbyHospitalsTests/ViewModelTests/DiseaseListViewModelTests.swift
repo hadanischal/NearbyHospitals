@@ -63,7 +63,7 @@ final class DiseaseListViewModelTests: QuickSpec {
                     verify(mockDiseaseListHandler).getDiseaseInfo()
                 }
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfIllness).to(equal(10))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(10))
                 }
 
                 it("emits the updateInfo to the UI") {
@@ -102,7 +102,7 @@ final class DiseaseListViewModelTests: QuickSpec {
                     verify(mockDiseaseListHandler).getDiseaseInfo()
                 }
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfIllness).to(equal(0))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(0))
                 }
                 it("doesnt emits updateInfo to the UI") {
                     let observable = testViewModel.updateInfo.asObservable()
@@ -138,7 +138,7 @@ final class DiseaseListViewModelTests: QuickSpec {
                 }
 
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfIllness).to(equal(10))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(10))
                 }
 
                 it("it sets DiseaseModel correctly") {

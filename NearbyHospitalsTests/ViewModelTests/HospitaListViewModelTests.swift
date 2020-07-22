@@ -66,7 +66,7 @@ final class HospitaListViewModelTests: QuickSpec {
                     verify(mockDiseaseListHandler).getHospitalsInfo()
                 }
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfHospital).to(equal(10))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(10))
                 }
                 it("it sets correct hospitalList") {
                     let correctResult = mockDiseaseModelList.hospitals.map { HospitaModel($0, time: waitingTime($0.waitingList)) }
@@ -108,7 +108,7 @@ final class HospitaListViewModelTests: QuickSpec {
                     verify(mockDiseaseListHandler).getHospitalsInfo()
                 }
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfHospital).to(equal(0))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(0))
                 }
                 it("it sets correct hospitalList") {
                     expect(testViewModel.hospitalList).to(equal([]))
@@ -147,7 +147,7 @@ final class HospitaListViewModelTests: QuickSpec {
                 }
 
                 it("it sets numbersOfIllness correctly") {
-                    expect(testViewModel.numbersOfHospital).to(equal(10))
+                    expect(testViewModel.numberOfRowsInSection).to(equal(10))
                 }
 
                 it("it sets DiseaseModel correctly") {

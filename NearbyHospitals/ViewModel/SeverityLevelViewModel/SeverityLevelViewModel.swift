@@ -11,17 +11,18 @@ import RxSwift
 
 protocol SeverityLevelDataSource: AnyObject {
     var navigationTitle: Observable<String> { get }
-    var numbersSeverity: Int { get }
+    var numberOfRowsInSection: Int { get }
     var collectionViewHeader: String { get }
     func severity(forIndex index: Int) -> LevelOfPain
 }
 
 final class SeverityLevelViewModel: SeverityLevelDataSource {
-    private var illnessesList: [LevelOfPain] { LevelOfPain.allCases }
 
     var navigationTitle: Observable<String> { Observable.just(L10n.SeverityLevel.navigationTitle) }
     var collectionViewHeader: String { L10n.SeverityLevel.collectionviewViewTitle }
-    var numbersSeverity: Int { self.illnessesList.count }
+    var numberOfRowsInSection: Int { illnessesList.count }
+
+    private var illnessesList: [LevelOfPain] { LevelOfPain.allCases }
 
     func severity(forIndex index: Int) -> LevelOfPain {
         self.illnessesList[index]

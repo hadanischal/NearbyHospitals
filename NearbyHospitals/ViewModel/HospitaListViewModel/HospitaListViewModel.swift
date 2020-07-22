@@ -11,7 +11,7 @@ import RxSwift
 
 protocol HospitaListDataSource: BaseViewModelProtocol {
     var navigationTitle: Observable<String> { get }
-    var numbersOfHospital: Int { get }
+    var numberOfRowsInSection: Int { get }
     var tableViewHeader: String { get }
     var waitingTimeDescription: String { get }
     var hospitalList: [HospitaModel] { get }
@@ -20,7 +20,7 @@ protocol HospitaListDataSource: BaseViewModelProtocol {
 
 final class HospitaListViewModel: HospitaListDataSource {
     var navigationTitle: Observable<String> { Observable.just(L10n.HospitaList.navigationTitle) }
-    var numbersOfHospital: Int { hospitalList.count }
+    var numberOfRowsInSection: Int { hospitalList.count }
     var tableViewHeader: String { L10n.HospitaList.tableViewTitle }
     var waitingTimeDescription: String { L10n.HospitaList.waitingTime }
 

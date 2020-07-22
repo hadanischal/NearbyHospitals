@@ -63,7 +63,7 @@ final class DiseaseListViewController: UITableViewController, BaseViewProtocol {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numbersOfIllness
+        return viewModel.numberOfRowsInSection
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -11,10 +11,9 @@ import RxSwift
 
 protocol DiseaseListDataSource: BaseViewModelProtocol {
     var navigationTitle: Observable<String> { get }
-    var numbersOfIllness: Int { get }
+    var numberOfRowsInSection: Int { get }
     var tableViewHeader: String { get }
 
-    func viewDidLoad()
     func diseaseInfo(forIndex index: Int) -> DiseaseModel
 }
 
@@ -22,7 +21,7 @@ final class DiseaseListViewModel: DiseaseListDataSource {
     var navigationTitle: Observable<String> { Observable.just(L10n.DiseaseList.navigationTitle) }
     var tableViewHeader: String { L10n.DiseaseList.tableViewTitle }
 
-    var numbersOfIllness: Int { self.diseaseList.count }
+    var numberOfRowsInSection: Int { self.diseaseList.count }
 
     let updateInfo: Observable<Bool>
     let errorResult: Observable<Error>
