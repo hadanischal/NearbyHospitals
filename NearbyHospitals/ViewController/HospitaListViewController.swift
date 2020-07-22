@@ -62,8 +62,6 @@ final class HospitaListViewController: UITableViewController, BaseViewProtocol {
     }
 
     private func setupViewModel() {
-        createSpinnerView()
-
         viewModel.updateInfo
             .filter { $0 }
             .asDriver(onErrorJustReturn: false)
@@ -74,19 +72,10 @@ final class HospitaListViewController: UITableViewController, BaseViewProtocol {
         viewModel.errorResult
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] error in
-                self?.removeSpinnerView()
                 self?.showAlertView(withTitle: error.localizedDescription, andMessage: error.localizedDescription)
             }).disposed(by: disposeBag)
 
-        viewModel.isLoading
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] status in
-                if status {
-                    self?.createSpinnerView()
-                } else {
-                    self?.removeSpinnerView()
-                }
-            }).disposed(by: disposeBag)
+        viewModel.isLoading.bind(to: isAnimating).disposed(by: disposeBag)
 
         viewModel.viewDidLoad()
     }
